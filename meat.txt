@@ -1,0 +1,151 @@
+bacon  
+bacon bits     	
+beef  
+beef tongue
+beef tripe  
+beef stew meat
+ground beef
+ground beef chuck
+rump roast
+brisket
+chuck steak
+filet mignon
+flank steak
+flank
+oxtail
+ribeye steak
+ribeye
+  	
+capon       	
+chicken
+chicken break
+chicken thighs
+
+corned beef          	
+Cornish hen        	
+dried beef      	
+duck          	
+frankfurters          	
+goat          	
+goose       	
+guinea fowl    	
+hare  
+       	
+jerky        	
+lamb
+meatball
+meatloaf         	
+mutton          	
+pork     
+pork chop   
+pork tenderloin
+pork rib
+ground pork	
+pork roll         	
+prairie chicken   
+pot roast  	
+rabbit       	
+sausage  
+Italian sausage
+smoked sausage        	
+smoked meats      	
+Spam       	
+tendon           	
+tripe         	
+turkey      	
+veal          	
+duck        	
+goose      	
+ 
+abalone          	
+clams       	
+crab         	
+crawfish 	
+cuttlefish 	
+eel
+lobster  
+lobster tail   	
+mussel         	
+octopus  	
+oysters    	
+prawns   	
+scallops  	
+shrimp     	
+squid        	
+tuna        	
+sea urchin
+whelk 
+Anchovy
+Bass
+Black cod
+Bluefish
+Bombay duck
+Butter fish
+Blowfish
+Bream
+Brill
+Catfish
+Cod
+Dogfish
+Dorade
+Flounder
+Grouper
+Haddock
+Halibut
+Herring
+Ilish
+John Dory
+Kingfish
+Lamprey
+Lingcod
+Mackerel
+Mahi Mahi
+Monkfish
+Mullet
+Chilean sea bass
+Pike
+Pollock
+Pomfret
+Pompano
+Sablefish
+Sanddab
+Sardine
+Salmon
+Sea bass
+Shad 
+Shark
+Skate
+Snakehead
+Snapper 
+Sole
+Sturgeon
+Surimi
+Swordfish
+Tilapia
+Tilefish
+Trout
+Tuna
+Turbot
+Wahoo
+Whitefish
+Whiting
+
+bison        	
+buffalo     	        	
+elk     	
+foie gras         	
+frog  	
+grouse      	
+ham          	
+horse     	
+moose      	
+pheasant   	
+quail      	
+reindeer  	
+snail 
+
+intestine   
+liver    	
+kidney      	
+tongue     	
+venison        
