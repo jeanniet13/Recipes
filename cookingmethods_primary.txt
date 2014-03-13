@@ -1,0 +1,16 @@
+boil
+bake
+cook
+deep-fry
+stir-fry
+simmer
+baste
+roast
+grill
+broil
+pan-fry
+poach
+steam
+braise
+stew
+scald
