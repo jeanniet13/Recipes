@@ -1,12 +1,22 @@
+coriander
+ginger
+nutmeg
+black pepper
+white pepper
+saffon
+salt
+vanilla
+basil
+bay leaves
+borage 
+ennel
+juniper
+marjoram, Sweet
+myrtle
+oregano
 parsley
-basil (spaghetti)
-black pepper (sauces and meat)
-white pepper (fish)
-oregano (pizza)
-majoran
-thyme
 rosemary
-bay leaf
 sage
-fennel seeds
 olive oil
+garlic
+thyme
