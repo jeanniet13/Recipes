@@ -4,6 +4,12 @@ beef
 beef tongue
 beef tripe  
 beef stew meat
+beef brisket
+beef tenderloin
+beef sirloin
+beef short loin
+beef chuck roast
+beef roast
 ground beef
 ground beef chuck
 rump roast
@@ -15,13 +21,15 @@ flank
 oxtail
 ribeye steak
 ribeye
+rib roast
   	
 capon       	
 chicken
-chicken break
+chicken breast
 chicken thighs
 
-corned beef          	
+corned beef
+corned beef brisket
 Cornish hen        	
 dried beef      	
 duck          	
@@ -33,6 +41,7 @@ hare
        	
 jerky        	
 lamb
+leg of lamb
 meatball
 meatloaf         	
 mutton          	
@@ -40,6 +49,8 @@ pork
 pork chop   
 pork tenderloin
 pork rib
+pork loin
+pork loin roast
 ground pork	
 pork roll         	
 prairie chicken   
@@ -57,20 +68,29 @@ veal
 duck        	
 goose      	
  
+fish
 abalone          	
-clams       	
-crab         	
+clams
+clam meat
+crab
+crabmeat
 crawfish 	
-cuttlefish 	
+cuttlefish
+calamari
+calamari tubes
 eel
 lobster  
-lobster tail   	
+lobster tail
+lobster meat
 mussel         	
 octopus  	
 oysters    	
 prawns   	
 scallops  	
-shrimp     	
+shrimp  
+large shrimp
+medium shrimp
+small shrimp
 squid        	
 tuna        	
 sea urchin
@@ -84,13 +104,16 @@ Butter fish
 Blowfish
 Bream
 Brill
+bay scallops
 Catfish
 Cod
+cod filet
 Dogfish
 Dorade
 Flounder
 Grouper
 Haddock
+haddock filet
 Halibut
 Herring
 Ilish
