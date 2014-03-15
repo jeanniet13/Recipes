@@ -19,3 +19,7 @@ puree
 reduce
 grate
 deglaze
+season
+crush
+squeeze
+shake
