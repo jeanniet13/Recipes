@@ -5,6 +5,15 @@ import re
 import fractions
 from bs4 import BeautifulSoup
 
+cmp_list = open('cookingmethods_primary.txt', 'rb').read().split('\r\n')
+cms_list = open('cookingmethods_secondary.txt', 'rb').read().split('\r\n')
+tool_list = open('tools.txt','rb').read().split('\r\n')
+veg_list = open('vegetables.txt', 'rb').read().split('\r\n')
+meat_list = open('meat.txt', 'rb').read().split('\r\n')
+oil_list = open('oil.txt', 'rb').read().split('\r\n')
+liquid_list = open('liquid.txt', 'rb').read().split('\r\n')
+spice_list = open('spices.txt', 'rb').read().split('\r\n')
+
 class Recipe:
     ingredients = [] # list of Ingredients
     directions = [] # list of Steps
@@ -28,15 +37,6 @@ class Step:
     cooking_time = 0.0
 
 def parse(link, recipe):
-    cmp_list = open('cookingmethods_primary.txt', 'rb').read().split('\r\n')
-    cms_list = open('cookingmethods_secondary.txt', 'rb').read().split('\r\n')
-    tool_list = open('tools.txt','rb').read().split('\r\n')
-    veg_list = open('vegetables.txt', 'rb').read().split('\r\n')
-    meat_list = open('meat.txt', 'rb').read().split('\r\n')
-    oil_list = open('oil.txt', 'rb').read().split('\r\n')
-    liquid_list = open('liquid.txt', 'rb').read().split('\r\n')
-    spice_list = open('spices.txt', 'rb').read().split('\r\n')
-
     recipe_url = urllib2.urlopen("http://allrecipes.com/Recipe/Quinoa-and-Black-Beans/Detail.aspx?evt19=1")
     recipe_html = recipe_url.read()
     soup = BeautifulSoup(recipe_html)
