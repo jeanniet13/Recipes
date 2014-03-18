@@ -1,15 +1,12 @@
-bacon  
-bacon bits     	
-beef  
+beef
 beef tongue
-beef tripe  
+beef tripe
 beef stew meat
 beef brisket
 beef tenderloin
 beef sirloin
 beef short loin
-beef chuck roast
-beef roast
+beef chuck
 ground beef
 ground beef chuck
 rump roast
@@ -22,98 +19,83 @@ oxtail
 ribeye steak
 ribeye
 rib roast
-  	
-capon       	
-chicken
-chicken breast
-chicken thighs
-
 corned beef
 corned beef brisket
-Cornish hen        	
-dried beef      	
-duck          	
-frankfurters          	
-goat          	
-goose       	
-guinea fowl    	
-hare  
-       	
-jerky        	
+pot roast
+veal
+bison
+buffalo
 lamb
-leg of lamb
+mutton
+frog
+goat
+horse
+frankfurter
 meatball
-meatloaf         	
-mutton          	
-pork     
-pork chop   
+meatloaf
+sausage
+Italian sausage
+chorizo
+tendon
+tripe
+intestine
+liver
+kidney
+tongue
+hare
+rabbit
+abalone
+whelk
+snail
+bacon
+bacon bits
+pork
+pork chop
 pork tenderloin
 pork rib
 pork loin
 pork loin roast
-ground pork	
-pork roll         	
-prairie chicken   
-pot roast  	
-rabbit       	
-sausage  
-Italian sausage
-smoked sausage        	
-smoked meats      	
-Spam       	
-tendon           	
-tripe         	
-turkey      	
-veal          	
-duck        	
-goose      	
- 
-fish
-abalone          	
-clams
-clam meat
+pork sparerib
+ground pork
+pork roll
+Spam
+ham
+capon
+chicken
+chicken breast
+chicken thighs
+Cornish hen
+prairie chicken
+duck
+foie gras
+goose
+grouse
+guinea fowl
+pheasant
+quail
+turkey
+clam
 crab
-crabmeat
-crawfish 	
+crawfish
 cuttlefish
-calamari
-calamari tubes
 eel
-lobster  
-lobster tail
-lobster meat
-mussel         	
-octopus  	
-oysters    	
-prawns   	
-scallops  	
-shrimp  
-large shrimp
-medium shrimp
-small shrimp
-squid        	
-tuna        	
-sea urchin
-whelk 
+fish
+tuna
 Anchovy
 Bass
 Black cod
 Bluefish
-Bombay duck
 Butter fish
 Blowfish
 Bream
 Brill
-bay scallops
 Catfish
 Cod
-cod filet
 Dogfish
 Dorade
 Flounder
 Grouper
 Haddock
-haddock filet
 Halibut
 Herring
 Ilish
@@ -135,8 +117,7 @@ Sanddab
 Sardine
 Salmon
 Sea bass
-Shad 
-Shark
+Shad
 Skate
 Snakehead
 Snapper 
@@ -152,23 +133,18 @@ Turbot
 Wahoo
 Whitefish
 Whiting
-
-bison        	
-buffalo     	        	
-elk     	
-foie gras         	
-frog  	
-grouse      	
-ham          	
-horse     	
-moose      	
-pheasant   	
-quail      	
-reindeer  	
-snail 
-
-intestine   
-liver    	
-kidney      	
-tongue     	
-venison        
+lobster
+mussel
+octopus
+oyster
+scallop
+sea urchin
+Shark
+prawn
+shrimp
+calamari
+squid
+reindeer
+venison
+elk
+moose

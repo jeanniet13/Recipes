@@ -16,10 +16,7 @@ Asarabacca
 Avens
 Avocado leaf
 Barberry 
-Basil sweet
-Basil lemon
-Basil Thai
-Basil Holy
+Basil
 Bay leaf
 Bee balm
 Boldo
@@ -45,23 +42,22 @@ Cilantro
 Cinnamon
 Clary
 Clove
-Coriander seed
+Coriander
 Costmary
 Cuban oregano
 Cubeb pepper
 Cudweed
 Culantro
 Cumin
-Curry leaf
-Curry plant
-Dill seed
-Dill herb
+Curry
+Dill
 Elderflower
 Epazote
 Fennel
 Fenugreek
 File powder
 Fingerroot
+Five-spice
 Galangal
 Galingale
 Garlic chives
@@ -75,6 +71,7 @@ Houttuynia cordata
 Huacatay
 Hyssop
 Indonesian bay leaf
+Italian seasoning
 Jasmine flowers
 Jimbu
 Juniper berry
@@ -139,6 +136,7 @@ sage
 saigon cinnamon
 salad burnet
 salep
+salt
 sassafras
 savory
 sesame

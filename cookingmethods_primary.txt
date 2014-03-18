@@ -15,3 +15,7 @@ steam
 braise
 stew
 scald
+sear
+blanch
+barbeque
+griddle

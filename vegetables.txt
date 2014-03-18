@@ -19,7 +19,6 @@ common purslane
 corn salad
 cress
 dandelion
-dill
 endive
 fat hen
 fiddlehead
@@ -79,15 +78,14 @@ luffa
 olive fruit
 pumpkin
 squash
-sweet corn aka corn; aka maize
+corn
 sweet pepper
 tinda
 tomatillo
 tomato
-vanilla
 west indian gherkin
 winter melon
-zucchini/courgette
+zucchini
 artichoke
 broccoli
 caper
@@ -130,11 +128,7 @@ asparagus
 cardoon
 celeriac
 celery
-chives
-elephant garlic
 florence fennel
-garlic
-garlic chives
 kohlrabi
 kurrat
 lemongrass
@@ -166,9 +160,6 @@ earthnut pea
 elephant foot yam
 ensete
 galangal
-ginger
-hamburg parsley
-horseradish
 jerusalem artichoke
 jícama
 mashua
@@ -208,3 +199,6 @@ ogonori
 sea grape
 sea lettuce
 wakame
+tofu
+tempeh
+seitan
