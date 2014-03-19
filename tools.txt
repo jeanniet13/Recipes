@@ -1,65 +1,116 @@
-Aluminium foil
+Absinthe spoon
+Adjustable V-rack
+Aluminum foil
+Aluminum stock pan
+Anodized aluminum nonstick pan
 Apple corer
 Apple cutter
+Bar spoon
+Basket rack
 Baster
+Berry spoon
 Biscuit cutter
 Biscuit press
 Blow torch
 Boil over preventer
+baking pan
+baking sheets
 Baking stone
+Beanpot
 Bedrock mortar
 Bottle opener
 Bottle scraper
 Bowl
+Braiser pan
+Brazier pot
 Bread knife
+Bread pan
+Broiler pan
 Browning tray
 Butcher block
 Butcher paper
 Butter churn
 Butter curler
+Caddy spoon
 Cake and pie server
+Cake pan
+Can Opener
 Candy thermometer
+Carbon steel pan
+Casserole
+Casserole pan
 Cassole
+Cast iron skillet
+Chakla
 Cheesecloth
 Cheese knife
+Cheese scoop
 Chef’s knife
+Chef’s pan
 Cherry pitter
+Chestnut pan
 Chinoise
+Chip pan
 Churchkey
 Cocktail stick
 Coffee filter
+coffeemaker
 Colander
 Cookie cutter
 Cookie press
+Cooking pot
+Cooking sheet
+cooling racks
+copper hand hammered brazing pot
+Copper sauce pan
 Corkscrew
 Crab cracker
+Crepe pan
 Cutting board
 Diffuser (heat)
+Double boiler
+Doufeu
 Dough blender
 Dough scraper
+Dutch oven
 Egg piercer
 Egg poacher
 Egg separator
 Egg slicer
 Egg timer
+Electric kettle
+Electric water boiler
 Embossing mat
 Fillet knife
 Fish scalar
 Fish slice (kitchen utensil)
+Flat iron grill pan
+Flat rack
 Flesh-hook
 Flour sifter
+Fondue pot
 Food mill
+Food processor
 Frosting spatula
+Frying pan
+Frying skillet
 Funnel
 Garlic press
+Glass baking pan
+Gratine pan
 Grapefruit knife
 Grater
 Gravy strainer
 Greaseproof paper
+Griddle
+Grill pan
+Square griddle pan
 Herb chopper
-Chakla
 Juicer
+Karahi
+Kettle
 Kitchen utensil
+kitchen knife
 Ladle
 Lame
 Lemon reamer
@@ -73,21 +124,29 @@ Measuring spoon
 Meat grinder
 Meat tenderizer
 Meat thermometer
+Meatloaf pan
 Melon baller
 Mezzaluna
 Mortar and pestle
 Microplane
+Microwave
+Microwave oven
 Milk watcher
 Mouli grater
 Mushroom cloth
+Nonadjustable V-rack
+Nonstick skillet
 Nutcracker
 Nutmeg grater
+Omelette pan
 Oven bag
 Oven glove
 OXO (brand)
 P-38 can opener
+Paella pan
 Palayok
-Parchment paper (baking)
+Parchment paper
+Pasta spoon
 Pastry bag
 Pastry blender
 Pastry brush
@@ -96,41 +155,71 @@ Peel (tool)
 Peeler
 Pepper mill
 Pie bird
+Pie pan
 Pizza cutter
 Plastic wrap
 Potato masher
 Potato ricer
+pot boiler
 Pot holder
 Pothook
 Poultry shears
+Pressure cooker
 Pudding basin
 Pudding cloth
+Pyrex baking dish
+Ramekin
+Rice spoon
 Ricer
 Roasting jack
+Roasting pan
+Roasting pan with high cover
+Roasting rack
 Roller docker
 Rolling pin
+Rondeau
+salad spoon
 Salt and pepper shakers
 Saran (plastic)
+Saucier
+sauté pan
+Saucepan
+Sauteuse pan
 Scales
 Scissors
 Scoop
 Scotch hands
 Scraper (kitchen)
+Serving spoon
+Serving tongs
 Shellfish scraper
 Sieve
 Silpat
 Skewer
+Skillet grill pan
 Skimmer (utensil)
 Slotted spoon
+soup ladle
 Spatula
 Spider
+splatter screen
 Springform pan
 Spurtle
+Stainless steel pan
+Steel sauté pan
+Stir-fry pan
+stockpot
 Sugar nips
+Sugar spoon
 Sugar thermometer
+Sugar tong
 Sujeo
+Tablespoon
+Tajine
 Tamis
 Tava
+Tea infuser
+Teflon coated frying pan
 Timbale (food)
 Tin foil
 Tin opener
@@ -138,7 +227,19 @@ Tomato knife
 Tongs
 Trivet
 Trussing needle
+Two burner griddle pan
+Vegetable peeler
+Vertical rack
 Wax paper
 Whisk
+Wok
+Wonder pot
 Wooden spoon
 Zester
+
+
+
+
+
+
+
