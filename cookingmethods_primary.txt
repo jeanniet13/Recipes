@@ -19,3 +19,4 @@ sear
 blanch
 barbeque
 griddle
+sear
