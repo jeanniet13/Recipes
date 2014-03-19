@@ -17,6 +17,7 @@ meat_list = open('meat.txt', 'rb').read().split('\r\n')
 oil_list = open('oil.txt', 'rb').read().split('\r\n')
 liquid_list = open('liquid.txt', 'rb').read().split('\r\n')
 spice_list = open('spices.txt', 'rb').read().split('\r\n')
+sauce_list = open('sauce.txt', 'rb').read().split('\r\n')
 
 class Recipe:
     ingredients = [] # list of Ingredients
@@ -31,7 +32,7 @@ class Ingredient:
     name = 'none'
     descriptor = ''
     preparation = ''
-    itype = '' #meat, spice, liquid, veggie, oil
+    itype = '' #meat, spice, liquid, veggie, oil, sauce
 
 class Step:
     text = []
@@ -68,6 +69,12 @@ def parse(link, recipe):
             if (" " + liquid) in ingname:
                 newIngredient.itype = 'liquid'
                 break
+
+        if newIngredient.itype == '':
+            for sauce in sauce_list:
+                if (" " + sauce) in ingname:
+                    newIngredient.itype = 'sauce'
+                    break
             
         if newIngredient.itype == '':
             for spice in spice_list:
@@ -96,8 +103,8 @@ def parse(link, recipe):
         recipe.ingredients.append(newIngredient)
         #ingredients.append(((quantity.contents)[0].encode('utf-8'), (ingredient.contents)[0].encode('utf-8')))
 
-    #for ingredient in recipe.ingredients:
-        #print ingredient.quantity, ";", ingredient.measurement, ";", ingredient.preparation, ";", ingredient.name, ";", ingredient.itype
+    for ingredient in recipe.ingredients:
+        print ingredient.quantity, ";", ingredient.measurement, ";", ingredient.preparation, ";", ingredient.name, ";", ingredient.itype
 
     directions_html = soup.find_all(class_='directLeft')
     directions_span = directions_html[0].select('span')
