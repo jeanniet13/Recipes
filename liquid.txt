@@ -1,16 +1,16 @@
-Chicken stock
-Fish stock
-Fond blanc
-Fond brun
-Glace viande
-Ham stock
-Jus
-Lamb stock
-Master stock
-Prawn stock
-Veal stock
-Vegetable stock
-Remouillage
-Beef broth
-Chicken broth
-Vegetable broth
+chicken stock
+fish stock
+fond blanc
+fond brun
+glace viande
+ham stock
+jus
+lamb stock
+master stock
+prawn stock
+veal stock
+vegetable stock
+remouillage
+beef broth
+chicken broth
+vegetable broth

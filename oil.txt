@@ -1,27 +1,27 @@
-Almond oil
-Avocado oil
-Butter
-Clarified butter
-Canola oil
-Coconut oil
-Rice bran oil
-Corn oil
-Cottonseed oil
-Flaxseed oil
-Grape seed oil
-Hemp oil
-Lard
-Margarine
-Mustard oil
-Margarine
-Macadamia oil
-Olive oil
-Palm oil
-Peanut oil
-Pumpkin seed oil
-Safflower oil
-Sesame oil
-Soybean oil
-Sunflower oil
-Tea seed oil
-Walnut oil
+almond oil
+avocado oil
+butter
+clarified butter
+canola oil
+coconut oil
+rice bran oil
+corn oil
+cottonseed oil
+flaxseed oil
+grape seed oil
+hemp oil
+lard
+margarine
+mustard oil
+margarine
+macadamia oil
+olive oil
+palm oil
+peanut oil
+pumpkin seed oil
+safflower oil
+sesame oil
+soybean oil
+sunflower oil
+tea seed oil
+walnut oil
