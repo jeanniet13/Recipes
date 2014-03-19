@@ -3,6 +3,7 @@ import nltk
 import urllib2
 import re
 import fractions
+import json
 from bs4 import BeautifulSoup
 from vegTransformation import vegsub
 from vegTransformation import meatsub
@@ -95,8 +96,8 @@ def parse(link, recipe):
         recipe.ingredients.append(newIngredient)
         #ingredients.append(((quantity.contents)[0].encode('utf-8'), (ingredient.contents)[0].encode('utf-8')))
 
-    for ingredient in recipe.ingredients:
-        print ingredient.quantity, ";", ingredient.measurement, ";", ingredient.preparation, ";", ingredient.name, ";", ingredient.itype
+    #for ingredient in recipe.ingredients:
+        #print ingredient.quantity, ";", ingredient.measurement, ";", ingredient.preparation, ";", ingredient.name, ";", ingredient.itype
 
     directions_html = soup.find_all(class_='directLeft')
     directions_span = directions_html[0].select('span')
@@ -122,9 +123,9 @@ def parse(link, recipe):
                 if tool in sentence2 and tool not in recipe.tools:
                     recipe.tools.append(tool)
 
-    print recipe.cooking_methods
-    print recipe.preparation_methods
-    print recipe.tools
+    #print recipe.cooking_methods
+    #print recipe.preparation_methods
+    #print recipe.tools
 
 def toVeg(recipe):
     if isVeg(recipe):
@@ -175,10 +176,27 @@ def isVeg(recipe):
             return False
     return True
 
+def printJson(recipe):
+    jsonoutput = {}
+    ingList = []
+    for ingredient in recipe.ingredients:
+        tempdict = {}
+        tempdict["name"] = ingredient.name
+        tempdict["quantity"] = ingredient.quantity
+        tempdict["measurement"] = ingredient.measurement
+        tempdict["descriptor"] = ingredient.descriptor
+        tempdict["preparation"] = ingredient.preparation
+        ingList.append(tempdict)
+    jsonoutput["ingredients"] = ingList
+    jsonoutput["cooking method"] = recipe.cooking_methods
+    jsonoutput["cooking tools"] = recipe.tools
+    print json.dumps(jsonoutput, indent=2, separators=(',',': '))
+
 def main():
     link = raw_input("What is the URL for the recipe? ")
     recipe = Recipe()
     parse(link, recipe)
+    printJson(recipe)
     toVeg(recipe)
     toMeat(recipe)
 

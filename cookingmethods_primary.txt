@@ -20,3 +20,4 @@ blanch
 barbeque
 griddle
 sear
+fry
