@@ -34,13 +34,14 @@ Butter curler
 Caddy spoon
 Cake and pie server
 Cake pan
-Can Opener
+Can opener
 Candy thermometer
 Carbon steel pan
 Casserole
 Casserole pan
 Cassole
 Cast iron skillet
+Cast iron dutch oven
 Chakla
 Cheesecloth
 Cheese knife
@@ -58,6 +59,7 @@ coffeemaker
 Colander
 Cookie cutter
 Cookie press
+Cookie sheet
 Cooking pot
 Cooking sheet
 cooling racks
@@ -73,6 +75,7 @@ Doufeu
 Dough blender
 Dough scraper
 Dutch oven
+Eggbeater
 Egg piercer
 Egg poacher
 Egg separator
@@ -105,6 +108,7 @@ Greaseproof paper
 Griddle
 Grill pan
 Square griddle pan
+Hand held electric mixer
 Herb chopper
 Juicer
 Karahi
@@ -115,6 +119,7 @@ Ladle
 Lame
 Lemon reamer
 Lemon squeezer
+Loaf pan
 Lobster pick
 Mandoline
 Mated colander pot
@@ -178,6 +183,7 @@ Roasting rack
 Roller docker
 Rolling pin
 Rondeau
+Round cake pan
 salad spoon
 Salt and pepper shakers
 Saran (plastic)
