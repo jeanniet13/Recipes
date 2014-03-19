@@ -5,6 +5,9 @@ beef stew meat
 beef brisket
 beef tenderloin
 beef sirloin
+beef top sirloin
+beef bottom sirloin
+beef tri-tip
 beef short loin
 beef chuck
 ground beef

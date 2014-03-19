@@ -3,6 +3,7 @@ import nltk
 import urllib2
 import re
 import fractions
+import json
 from bs4 import BeautifulSoup
 from vegTransformation import vegsub
 from vegTransformation import meatsub
@@ -16,6 +17,7 @@ meat_list = open('meat.txt', 'rb').read().split('\r\n')
 oil_list = open('oil.txt', 'rb').read().split('\r\n')
 liquid_list = open('liquid.txt', 'rb').read().split('\r\n')
 spice_list = open('spices.txt', 'rb').read().split('\r\n')
+sauce_list = open('sauce.txt', 'rb').read().split('\r\n')
 
 class Recipe:
     ingredients = [] # list of Ingredients
@@ -30,7 +32,7 @@ class Ingredient:
     name = 'none'
     descriptor = ''
     preparation = ''
-    itype = '' #meat, spice, liquid, veggie, oil
+    itype = '' #meat, spice, liquid, veggie, oil, sauce
 
 class Step:
     text = []
@@ -58,40 +60,62 @@ def parse(link, recipe):
 ##        for (word, pos) in tags:
 ##            if "NN" in pos:               
             
-        newIngredient.name = ingredient[0]
-        if len(ingredient) > 1:
-            newIngredient.preparation = ingredient[1]
-        
-        ingname = " " + newIngredient.name
+        ingname = " " + ''.join(ingredient)
+        tempname = ""
         for liquid in liquid_list:
             if (" " + liquid) in ingname:
                 newIngredient.itype = 'liquid'
+                tempname = liquid
                 break
+
+        if newIngredient.itype == '':
+            for sauce in sauce_list:
+                if (" " + sauce) in ingname:
+                    newIngredient.itype = 'sauce'
+                    tempname = sauce
+                    break
             
         if newIngredient.itype == '':
             for spice in spice_list:
                 if (" " + spice) in ingname:
-                    print spice
                     newIngredient.itype = 'spice'
+                    tempname = spice
                     break
                 
         if newIngredient.itype == '':
             for veg in veg_list:
                 if (" " + veg) in ingname:
                     newIngredient.itype = 'veggie'
+                    tempname = veg
                     break
                 
         if newIngredient.itype == '':
             for oil in oil_list:
                 if (" " + oil) in ingname:
                     newIngredient.itype = 'oil'
+                    tempname = oil
                     break
                 
         if newIngredient.itype == '':
             for meat in meat_list:
                 if (" " + meat) in ingname:
                     newIngredient.itype = 'meat'
+                    tempname = meat
                     break
+
+        if newIngredient.itype == '':
+            tempname = ingredient[0]
+
+        newIngredient.name = tempname
+        #newIngredient.name = ingredient[0]
+        if len(ingredient) > 1:
+            #newIngredient.preparation = ingredient[1]
+            if tempname in ingredient[0]:            
+                newIngredient.descriptor = ingredient[0].replace(tempname, "")
+                newIngredient.preparation = ingredient[1]
+            elif tempname in ingredient[1]:
+                newIngredient.descriptor = ingredient[1].replace(tempname, "")
+                newIngredient.preparation = ingredient[0]
                 
         recipe.ingredients.append(newIngredient)
         #ingredients.append(((quantity.contents)[0].encode('utf-8'), (ingredient.contents)[0].encode('utf-8')))
@@ -123,9 +147,9 @@ def parse(link, recipe):
                 if tool in sentence2 and tool not in recipe.tools:
                     recipe.tools.append(tool)
 
-    print recipe.cooking_methods
-    print recipe.preparation_methods
-    print recipe.tools
+    #print recipe.cooking_methods
+    #print recipe.preparation_methods
+    #print recipe.tools
 
 def toVeg(recipe):
     if isVeg(recipe):
@@ -176,10 +200,27 @@ def isVeg(recipe):
             return False
     return True
 
+def printJson(recipe):
+    jsonoutput = {}
+    ingList = []
+    for ingredient in recipe.ingredients:
+        tempdict = {}
+        tempdict["name"] = ingredient.name
+        tempdict["quantity"] = ingredient.quantity
+        tempdict["measurement"] = ingredient.measurement
+        tempdict["descriptor"] = ingredient.descriptor
+        tempdict["preparation"] = ingredient.preparation
+        ingList.append(tempdict)
+    jsonoutput["ingredients"] = ingList
+    jsonoutput["cooking method"] = recipe.cooking_methods
+    jsonoutput["cooking tools"] = recipe.tools
+    print json.dumps(jsonoutput, indent=2, separators=(',',': '))
+
 def main():
     link = raw_input("What is the URL for the recipe? ")
     recipe = Recipe()
     parse(link, recipe)
+    printJson(recipe)
     toVeg(recipe)
     toMeat(recipe)
 

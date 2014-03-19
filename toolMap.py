@@ -1,0 +1,21 @@
+toolverbmap = {
+  'chop':'knife',
+  'stir':'wooden spoon',
+  'beat':'fork',
+  'cream':'hand mixer',
+  'dice':'knife',
+  'drizzle':'spoon',
+  'fold':'wooden spoon',
+  'glaze':'spoon',
+  'julienne':'knife',
+  'marinate':'bowl',
+  'mince':'knife',
+  'shred':'food processor',
+  'sift':'colander',
+  'slice':'knife',
+  'peel':'peeler',
+  'puree':'blender',
+  'grate':'grater',
+  'crush':'pestle mortar',
+  'whisk':'whisk'
+}

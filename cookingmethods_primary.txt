@@ -19,3 +19,5 @@ sear
 blanch
 barbeque
 griddle
+sear
+fry
