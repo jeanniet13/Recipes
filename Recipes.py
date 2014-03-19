@@ -4,6 +4,9 @@ import urllib2
 import re
 import fractions
 from bs4 import BeautifulSoup
+from vegTransformation import vegsub
+from vegTransformation import meatsub
+from vegTransformation import vegrank
 
 cmp_list = open('cookingmethods_primary.txt', 'rb').read().split('\r\n')
 cms_list = open('cookingmethods_secondary.txt', 'rb').read().split('\r\n')
@@ -37,46 +40,64 @@ class Step:
     cooking_time = 0.0
 
 def parse(link, recipe):
-    recipe_url = urllib2.urlopen("http://allrecipes.com/Recipe/Quinoa-and-Black-Beans/Detail.aspx?evt19=1")
+    recipe_url = urllib2.urlopen(link)
     recipe_html = recipe_url.read()
     soup = BeautifulSoup(recipe_html)
 
     for quantity, ingredient in zip(soup.find_all(id='lblIngAmount'), soup.find_all(id='lblIngName')):
-        quantity = quantity.contents[0].encode('utf-8').split(' ', 1)
         newIngredient = Ingredient()
+        
+        quantity = quantity.contents[0].encode('utf-8').split(' ', 1)        
         newIngredient.quantity = float(fractions.Fraction(quantity[0]))
         if len(quantity) > 1:
-            newIngredient.measurement = quantity[1]
-        newIngredient.name = (ingredient.contents)[0].encode('utf-8')
+            newIngredient.measurement = quantity[1].lower()
+            
+        ingredient = (ingredient.contents)[0].encode('utf-8').lower().split(', ',1)
+        # attempting nltk pos tagger, but it's really bad with short phrases
+##        tags = nltk.pos_tag(nltk.word_tokenize(ingredient))
+##        for (word, pos) in tags:
+##            if "NN" in pos:               
+            
+        newIngredient.name = ingredient[0]
+        if len(ingredient) > 1:
+            newIngredient.preparation = ingredient[1]
+        
+        ingname = " " + newIngredient.name
         for liquid in liquid_list:
-            if liquid.lower() in newIngredient.name.lower():
+            if (" " + liquid) in ingname:
                 newIngredient.itype = 'liquid'
                 break
+            
         if newIngredient.itype == '':
             for spice in spice_list:
-                if spice.lower() in newIngredient.name.lower():
+                if (" " + spice) in ingname:
+                    print spice
                     newIngredient.itype = 'spice'
                     break
+                
         if newIngredient.itype == '':
             for veg in veg_list:
-                if veg.lower() in newIngredient.name.lower():
+                if (" " + veg) in ingname:
                     newIngredient.itype = 'veggie'
                     break
+                
         if newIngredient.itype == '':
             for oil in oil_list:
-                if oil.lower() in newIngredient.name.lower():
+                if (" " + oil) in ingname:
                     newIngredient.itype = 'oil'
                     break
+                
         if newIngredient.itype == '':
             for meat in meat_list:
-                if meat.lower() in newIngredient.name.lower():
+                if (" " + meat) in ingname:
                     newIngredient.itype = 'meat'
                     break
+                
         recipe.ingredients.append(newIngredient)
         #ingredients.append(((quantity.contents)[0].encode('utf-8'), (ingredient.contents)[0].encode('utf-8')))
 
     for ingredient in recipe.ingredients:
-        print ingredient.quantity, ingredient.measurement, ingredient.name, ",", ingredient.itype
+        print ingredient.quantity, ";", ingredient.measurement, ";", ingredient.preparation, ";", ingredient.name, ";", ingredient.itype
 
     directions_html = soup.find_all(class_='directLeft')
     directions_span = directions_html[0].select('span')
@@ -111,17 +132,43 @@ def toVeg(recipe):
         print "Recipe is already vegetarian."
         return
     else:
-        meatveg = open('toVeg.txt', 'rb').read().split('\r\n')
         for ingredient in recipe.ingredients:
             if ingredient.itype == 'meat':
-                print "replace with veg"
-            elif ingredient.itype == 'liquid' and 'vegetable' not in ingredient.name.lower():
-                print "replace soup stocket with vegetable"
-        print "not done yet"
+                for key in sorted(meatsub.keys()):
+                    if key in ingredient.name:
+                        print meatsub[key]
+                        break
+                #print "replace with veg"
+            elif ingredient.itype == 'liquid' and 'vegetable' not in ingredient.name:
+                if "stock" in ingredient.name:
+                    print "vegetable stock"
+                else:
+                    print "vegetable broth"
+                #print "replace soup stock with vegetable"
+            else:
+                print ingredient.name
 
 def toMeat(recipe):
-    vegmeat = open('toMeat.txt', 'rb').read().split('\r\n')
-    print "not done yet"
+    if not isVeg(recipe):
+        print "Recipe already has meat in it."
+        return
+    else:
+        rank = 100
+        repkey = ''
+        reping = ''
+        for ingredient in recipe.ingredients:
+            for key in vegrank.keys():
+                if key in ingredient.name and vegrank[key] < rank:
+                    rank = vegrank[key]
+                    repkey = key
+                    reping = ingredient.name
+        for ingredient in recipe.ingredients:
+            if ingredient.name == reping:
+                print vegsub[repkey]
+            else:
+                print ingredient.name
+        if rank < 100:
+            "Recipe was not modified. There are no common meat substitutes in the recipe."
 
 def isVeg(recipe):
     for ingredient in recipe.ingredients:

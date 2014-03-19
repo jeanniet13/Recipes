@@ -34,7 +34,7 @@ frankfurter
 meatball
 meatloaf
 sausage
-Italian sausage
+italian sausage
 chorizo
 tendon
 tripe
@@ -58,13 +58,13 @@ pork loin roast
 pork sparerib
 ground pork
 pork roll
-Spam
+spam
 ham
 capon
 chicken
 chicken breast
 chicken thighs
-Cornish hen
+cornish hen
 prairie chicken
 duck
 foie gras
@@ -81,65 +81,65 @@ cuttlefish
 eel
 fish
 tuna
-Anchovy
-Bass
-Black cod
-Bluefish
-Butter fish
-Blowfish
-Bream
-Brill
-Catfish
-Cod
-Dogfish
-Dorade
-Flounder
-Grouper
-Haddock
-Halibut
-Herring
-Ilish
-John Dory
-Kingfish
-Lamprey
-Lingcod
-Mackerel
-Mahi Mahi
-Monkfish
-Mullet
-Chilean sea bass
-Pike
-Pollock
-Pomfret
-Pompano
-Sablefish
-Sanddab
-Sardine
-Salmon
-Sea bass
-Shad
-Skate
-Snakehead
-Snapper 
-Sole
-Sturgeon
-Surimi
-Swordfish
-Tilapia
-Tilefish
-Trout
-Tuna
-Turbot
-Wahoo
-Whitefish
-Whiting
+anchovy
+bass
+black cod
+bluefish
+butter fish
+blowfish
+bream
+brill
+catfish
+cod
+dogfish
+dorade
+flounder
+grouper
+haddock
+halibut
+herring
+ilish
+john dory
+kingfish
+lamprey
+lingcod
+mackerel
+mahi mahi
+monkfish
+mullet
+chilean sea bass
+pike
+pollock
+pomfret
+pompano
+sablefish
+sanddab
+sardine
+salmon
+sea bass
+shad
+skate
+snakehead
+snapper 
+sole
+sturgeon
+surimi
+swordfish
+tilapia
+tilefish
+trout
+tuna
+turbot
+wahoo
+whitefish
+whiting
 lobster
 mussel
 octopus
 oyster
 scallop
 sea urchin
-Shark
+shark
 prawn
 shrimp
 calamari

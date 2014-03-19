@@ -1,7 +1,0 @@
-eggplant:chicken
-sweet potato:beef
-black bean:beef
-artichoke:beef
-zucchini:crab
-asparagus:beef
-portobello:beef
