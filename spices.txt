@@ -36,6 +36,7 @@ celery seed
 chervil
 chicory
 chili pepper
+chili powder
 chives
 cicely
 cilantro
@@ -66,6 +67,7 @@ ginger
 golpar
 grains of paradise
 grains of selim
+green chili
 horseradish
 houttuynia cordata
 huacatay
@@ -110,6 +112,7 @@ njangsa
 nutmeg
 neem
 olida
+onion powder
 oregano
 orris root
 pandan flower

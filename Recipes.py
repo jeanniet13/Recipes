@@ -60,45 +60,62 @@ def parse(link, recipe):
 ##        for (word, pos) in tags:
 ##            if "NN" in pos:               
             
-        newIngredient.name = ingredient[0]
-        if len(ingredient) > 1:
-            newIngredient.preparation = ingredient[1]
-        
-        ingname = " " + newIngredient.name
+        ingname = " " + ''.join(ingredient)
+        tempname = ""
         for liquid in liquid_list:
             if (" " + liquid) in ingname:
                 newIngredient.itype = 'liquid'
+                tempname = liquid
                 break
 
         if newIngredient.itype == '':
             for sauce in sauce_list:
                 if (" " + sauce) in ingname:
                     newIngredient.itype = 'sauce'
+                    tempname = sauce
                     break
             
         if newIngredient.itype == '':
             for spice in spice_list:
                 if (" " + spice) in ingname:
                     newIngredient.itype = 'spice'
+                    tempname = spice
                     break
                 
         if newIngredient.itype == '':
             for veg in veg_list:
                 if (" " + veg) in ingname:
                     newIngredient.itype = 'veggie'
+                    tempname = veg
                     break
                 
         if newIngredient.itype == '':
             for oil in oil_list:
                 if (" " + oil) in ingname:
                     newIngredient.itype = 'oil'
+                    tempname = oil
                     break
                 
         if newIngredient.itype == '':
             for meat in meat_list:
                 if (" " + meat) in ingname:
                     newIngredient.itype = 'meat'
+                    tempname = meat
                     break
+
+        if newIngredient.itype == '':
+            tempname = ingredient[0]
+
+        newIngredient.name = tempname
+        #newIngredient.name = ingredient[0]
+        if len(ingredient) > 1:
+            #newIngredient.preparation = ingredient[1]
+            if tempname in ingredient[0]:            
+                newIngredient.descriptor = ingredient[0].replace(tempname, "")
+                newIngredient.preparation = ingredient[1]
+            elif tempname in ingredient[1]:
+                newIngredient.descriptor = ingredient[1].replace(tempname, "")
+                newIngredient.preparation = ingredient[0]
                 
         recipe.ingredients.append(newIngredient)
         #ingredients.append(((quantity.contents)[0].encode('utf-8'), (ingredient.contents)[0].encode('utf-8')))
