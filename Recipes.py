@@ -71,7 +71,6 @@ def parse(link, recipe):
         if newIngredient.itype == '':
             for spice in spice_list:
                 if (" " + spice) in ingname:
-                    print spice
                     newIngredient.itype = 'spice'
                     break
                 
