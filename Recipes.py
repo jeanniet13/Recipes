@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 from vegTransformation import vegsub
 from vegTransformation import meatsub
 from vegTransformation import vegrank
+from LowFatTransformation import lfingsub
 
 cmp_list = open('cookingmethods_primary.txt', 'rb').read().split('\r\n')
 cms_list = open('cookingmethods_secondary.txt', 'rb').read().split('\r\n')
@@ -150,6 +151,14 @@ def parse(link, recipe):
     #print recipe.cooking_methods
     #print recipe.preparation_methods
     #print recipe.tools
+def toLowFat(recipe):
+    for ingredient in recipe.ingredients:
+        for key in lfingsub.keys():
+            if key in ingredient.name:
+                print lfingsub[key]
+                break
+    print "Recipe already healthy, no substitutions made."
+
 
 def toVeg(recipe):
     if isVeg(recipe):
