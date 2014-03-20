@@ -1,0 +1,6 @@
+cucumber
+ivy gourd
+squash
+carrot
+radish
+bamboo shoot
