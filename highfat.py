@@ -4,14 +4,14 @@ highfatgrain = [
   "bread"
 ]
 
-/* not useful; check cooking method instead?
+''' not useful; check cooking method instead?
 highfatveg = [
   fried potatoes
   roasted potatoes
   roasted peanuts
   french fries
 ]
-*/
+'''
 
 highfatmeat = [
   "fish roe",
