@@ -22,7 +22,7 @@ lfingsub = {
     'soy sauce':'low-sodium soy sauce',
     'alfredo':'marinara',
     'pasta':'whole wheat pasta',
-    'sour cream':'Greek yogurt;,
+    'sour cream':'Greek yogurt',
     'bread':'pita',
     'flour tortilla':'corn tortilla',
     'white bread':'whole wheat bread',
