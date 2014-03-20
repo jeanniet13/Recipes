@@ -1,4 +1,4 @@
-﻿#---------------east asian-------------
+﻿#------------------------------east asian---------------------
 #sauce
 eastasianSauce = {
     'Doubanjiang',
@@ -213,7 +213,7 @@ softEastasianVegetable = {
     'red pepper'
 }
 
-#---------------French-------------
+#------------------------------------French------------------------
 #sauce
 frenchSauce = {
     'Sauce bechamel',
@@ -409,7 +409,7 @@ softFrenchVegetable = {
     'tomato'
 }
 
-#-------------italian--------------
+#----------------------------------italian----------------------------
 #sauce
 italianSauce = {
     'amatriciana sauce',
