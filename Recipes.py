@@ -11,16 +11,10 @@ from vegTransformation import meatsub
 from vegTransformation import vegrank
 
 from cuisineTransformation import *
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 from LowFatTransformation import lfingsub
 from LowFatTransformation import lfcooksub
 from LowFatTransformation import hfingsub
-=======
->>>>>>> b9d14ab7b8123c7e94f6e76ec76fbcfb7e1e96f8
-=======
->>>>>>> b9d14ab7b8123c7e94f6e76ec76fbcfb7e1e96f8
 
 
 cmp_list = open('cookingmethods_primary.txt', 'rb').read().split('\r\n')
@@ -86,7 +80,6 @@ def parse(link, recipe):
         ingredient = ingredient[0].contents[0].encode('utf-8').lower().split(', ',1)
             
         ingname = " " + ''.join(ingredient)
-        print ingname
         tempname = ""
         for liquid in liquid_list:
             if (" " + liquid) in ingname:
@@ -155,7 +148,6 @@ def parse(link, recipe):
         direction = re.sub(r'<.*?>', "", str(direction))
         recipe.directions.append(direction)
 
-    ##print recipe.directions
 
     for direction in recipe.directions:
         for sentence in direction.split('.'):
@@ -216,13 +208,11 @@ def toVeg(recipe):
                     if key in ingredient.name:
                         print "Substitute", ingredient.name, "with", meatsub[key] 
                         break
-                #print "replace with veg"
             elif ingredient.itype == 'liquid' and 'vegetable' not in ingredient.name:
                 if "stock" in ingredient.name:
                     print "vegetable stock"
                 else:
                     print "vegetable broth"
-                #print "replace soup stock with vegetable"
             else:
                 print ingredient.name
 
@@ -319,15 +309,7 @@ def toEastAsian(recipe):
                             print "is substituted by" , eastasianVegetable[random.randrange(len(eastasianVegetable))]
                 else:
                     print "is substituted by" , eastasianOil[random.randrange(len(eastasianOil))]
-<<<<<<< HEAD
-<<<<<<< HEAD
-            #else:                
-=======
 
->>>>>>> b9d14ab7b8123c7e94f6e76ec76fbcfb7e1e96f8
-=======
-
->>>>>>> b9d14ab7b8123c7e94f6e76ec76fbcfb7e1e96f8
                     
 def toFrench(recipe):
     print "French version"

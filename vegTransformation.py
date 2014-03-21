@@ -187,8 +187,8 @@ meatsub = {
   'reindeer':'tempeh',
   'venison':'tempeh',
   'elk':'tempeh',
-  'moose':'tempeh'
+  'moose':'tempeh',
   #'beef':'tofu',
   #'pork':'tofu',
-  #'chicken':'tofu'
+  'chicken':'tofu'
 }
