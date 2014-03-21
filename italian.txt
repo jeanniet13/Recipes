@@ -1,170 +1,100 @@
-#sauce
-italianSauce = {
-    'amatriciana sauce',
-    'arrabbiata sauce',
-    'bechamel sauce',
-    'bigoli in salsa',
-    'bolognese sauce',
-    'cacio e pepe',
-    'carbonara',
-    'clam sauce',
-    'genovese sauce',
-    'green sauce',
-    'gremolata',
-    'marinara sauce',
-    'neapolitan ragu',
-    'pesto',
-    'ragu',
-    'salmoriglio',
-    'sugo alla puttanesca',
-    'tomato sauce',
-    'vodka sauce'
-}
-
-sweetItalianSauce = {
-    'marinara sauce',
-    'tomato sauce'
-}
-
-sourItalianSauce = {
-    'amatriciana sauce',
-    'arrabbiata sauce',
-    'bolognese sauce',
-    'marinara sauce'
-}
-
-hotItalianSauce = {
-    'tomato sauce'
-}
-
-saltyItalianSauce = {
-    'bechamel sauce',
-    'bigoli in salsa',
-    'sugo alla puttanesca'
-}
-
-bitterItalianSauce = {
-}
-
-#spice
-italianSpice = {
-    'sugar',
-    'salt',
-    'garlic',
-    'bay leaves',
-    'basil',
-    'onion',
-    'fennel',
-    'mint',
-    'calamintha nepeta',
-    'oregano',
-    'chili pepper',
-    'parsley',
-    'rosemary',
-    'sage',
-    'thyme'
-}
-
-sweetItalianSpice = {
-    'sugar'
-}
-
-sourItalianSpice = {
-}
-
-hotItalianSpice = {
-    'chili pepper'
-}
-
-saltyItalianSpice = {
-    'salt'
-}
-
-bitterItalianSpice = {
-    'basil'
-}
-
-#oil
-italianOil = {
-    'almond oil',
-    'avocado oil',
-    'butter',
-    'canola oil',
-    'coconut oil',
-    'corn oil',
-    'lard',
-    'mustard oil',
-    'olive oil',
-    'palm oil',
-    'peanut oil',
-    'walnut oil'
-}
-
-#liquid
-italianLiquid = {
-    'chicken stock',
-    'fish stock',
-    'beef broth',
-    'chicken broth',
-    'vegetable broth'
-}
-
-sweetItalianLiquid = {
-}
-
-sourItalianLiquid = {
-}
-
-hotItalianLiquid = {
-}
-
-saltyItalianLiquid = {
-    'chicken stock',
-    'fish stock',
-    'beef broth'
-}
-
-bitterItalianLiquid = {
-}
-
-#vegetable
-italianVegetable = {
-    'tomato',
-    'garlic',
-    'onion',
-    'bell pepper',
-    'eggplant',
-    'cabbage',
-    'zucchini',
-    'artichokes',
-    'fennel',
-    'mushroom',
-    'celery',
-    'asparagus',
-    'broccoli',
-    'spinach',
-    'cauliflower',
-    'lettuce'
-}
-
-hardItalianVegetable = {
-    'garlic',
-    'onion',
-    'eggplant',
-    'zucchini',
-    'artichokes',
-    'fennel',
-    'celery',
-    'asparagus'
-}
-
-softItalianVegetable = {
-    'tomato',
-    'bell pepper',
-    'cabbage',
-    'mushroom',
-    'broccoli',
-    'spinach',
-    'cauliflower',
-    'lettuce'
-}
+amatriciana sauce
+arrabbiata sauce
+bechamel sauce
+bigoli in salsa
+bolognese sauce
+cacio e pepe
+carbonara
+clam sauce
+genovese sauce
+green sauce
+gremolata
+marinara sauce
+neapolitan ragu
+pesto
+ragu
+salmoriglio
+sugo alla puttanesca
+tomato sauce
+vodka sauce
+marinara sauce
+tomato sauce
+amatriciana sauce
+arrabbiata sauce
+bolognese sauce
+marinara sauce
+tomato sauce
+bechamel sauce
+bigoli in salsa
+sugo alla puttanesca
+sugar
+salt
+garlic
+bay leaves
+basil
+onion
+fennel
+mint
+calamintha nepeta
+oregano
+chili pepper
+parsley
+rosemary
+sage
+thyme
+sugar
+chili pepper
+salt
+basil
+almond oil
+avocado oil
+butter
+canola oil
+coconut oil
+corn oil
+lard
+mustard oil
+olive oil
+palm oil
+peanut oil
+walnut oil
+chicken stock
+fish stock
+beef broth
+chicken broth
+vegetable broth
+chicken stock',
+fish stock
+beef broth
+tomato
+garlic
+onion
+bell pepper
+eggplant
+cabbage
+zucchini
+artichokes
+fennel
+mushroom
+celery
+asparagus
+broccoli
+spinach
+cauliflower
+lettuce
+garlic
+onion
+eggplant
+zucchini
+artichokes
+fennel
+celery
+asparagus
+tomato
+bell pepper
+cabbage
+mushroom
+broccoli
+spinach
+cauliflower
+lettuce

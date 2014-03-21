@@ -1,193 +1,124 @@
-frenchSauce = {
-    'Sauce bechamel',
-    'Sauce espagnole',
-    'sauce veloute',
-    'sauce hollandaise',
-    'sauce tomate',
-    'Allemande sauce',
-    'Au jus',
-    'Sauce Bourguignonne',
-    'Breton sauce',
-    'Beurre noir',
-    'Beurre noisette',
-    'Sauce charcutière',
-    'Chasseur',
-    'Nantua sauce',
-    'Ravigote',
-    'Rouennaise', 
-    'Rouille',
-    'Sauce gribiche',
-    'Sauce lyonnaise',
-    'Sauce poivrade',
-    'Soubise sauce',
-    'Velouté sauce'
-}
-
-sweetFrenchSauce = {
-    'Sauce bechamel'
-}
-
-sourFrenchSauce = {
-    'sauce tomate',
-    'Allemande sauce'
-}
-
-hotFrenchSauce = {
-    'creamy chili hot sauce'
-}
-
-bitterFrenchSauce = {
-}
-
-saltyFrenchSauce = {
-    'Sauce espagnole',
-    'sauce veloute',
-    'sauce hollandaise',
-    'Allemande sauce',
-    'Au jus',
-    'Sauce Bourguignonne',
-    'Breton sauce',
-    'Beurre noir',
-    'Beurre noisette',
-    'Sauce charcutière',
-    'Chasseur',
-    'Nantua sauce',
-    'Rouennaise',
-    'Sauce gribiche'
-}
-
-#spice
-frenchSpice = {
-    'sugar',
-    'salt',
-    'mustard',
-    'paprika',
-    'garlic',
-    'ginger',
-    'thyme',
-    'basil',
-    'bay leaf',
-    'cayenne pepper',
-    'parsley',
-    'cumin',
-    'bouquet garni',
-    'rosemary',
-    'saffron',
-    'cayenne',
-    'tarragon',
-    'mint',
-    'basil',
-    'coriander',
-    'cloves',
-    'laurel',
-    'nutmeg',
-    'vanilla',
-    'almond extract',
-    'onion powder',
-    'sage'
-}
-
-sweetFrenchSpice = {
-    'mustard',
-    'vanilla
-}
-
-sourFrenchSpice = {
-}
-
-hotFrenchSpice = {
-    'cayenne pepper',
-    'paprika'
-}
-
-saltyFrenchSpice = {
-    'garlic',
-    'salt'
-}
-
-bitterFrenchSpice = {
-    'ginger'
-}
-
-#oil
-frenchOil = {
-    'almond oil',
-    'avocado oil',
-    'butter',
-    'canola oil',
-    'coconut oil',
-    'corn oil',
-    'lard',
-    'mustard oil',
-    'olive oil',
-    'palm oil',
-    'peanut oil',
-    'walnut oil'
-}
-
-#liquid
-frenchLiquid = {
-    'chicken stock',
-    'fish stock',
-    'beef broth',
-    'chicken broth',
-    'vegetable broth'
-}
-
-sweetFrenchLiquid = {
-}
-
-sourFrenchLiquid = {
-}
-
-hotFrenchLiquid = {
-}
-
-saltyFrenchLiquid = {
-    'fish stock',
-    'chicken stock',
-    'beef broth'
-}
-
-bitterFrenchLiquid = {
-}
-
-#vegetable
-frenchVegetable = {
-    'artichoke',
-    'asparagus',
-    'eggplant',
-    'carrot',
-    'elery',
-    'mushroom',
-    'cauliflower',
-    'cucumber',
-    'spinach',
-    'green bean',
-    'onion',
-    'red pepper',
-    'green pepper',
-    'potato',
-    'tomato'
-}
-
-hardFrenchVegetable = {
-    'artichoke',
-    'asparagus',
-    'eggplant',
-    'carrot',
-    'cucumber',
-    'green bean',
-    'onion',
-    'potato'
-}
-
-softFrenchVegetable = {
-    'elery',
-    'mushroom',
-    'cauliflower',
-    'spinach',
-    'red pepper',
-    'green pepper',
-    'tomato'
-}
+Sauce bechamel
+Sauce espagnole
+sauce veloute
+sauce hollandaise
+sauce tomate
+Allemande sauce
+Au jus
+Sauce Bourguignonne
+Breton sauce
+Beurre noir
+Beurre noisette
+Sauce charcutiere
+Chasseur
+Nantua sauce
+Ravigote
+Rouennaise 
+Rouille
+Sauce gribiche
+Sauce lyonnaise
+Sauce poivrade
+Soubise sauce
+Veloute sauce
+Sauce bechamel
+sauce tomate
+Allemande sauce
+creamy chili hot sauce
+Sauce espagnole
+sauce veloute
+sauce hollandaise
+Allemande sauce
+Au jus
+Sauce Bourguignonne
+Breton sauce
+Beurre noir
+Beurre noisette
+Sauce charcutiere
+Chasseur
+Nantua sauce
+Rouennaise
+Sauce gribiche
+sugar
+salt
+mustard
+paprika
+garlic
+ginger
+thyme
+basil
+bay leaf
+cayenne pepper
+parsley
+cumin
+bouquet garni
+rosemary
+saffron
+cayenne
+tarragon
+mint
+basil
+coriander
+cloves
+laurel
+nutmeg
+vanilla
+almond extract
+onion powder
+sage
+mustard
+vanilla
+cayenne pepper
+paprika
+garlic
+salt
+ginger
+almond oil
+avocado oil
+butter
+canola oil
+coconut oil
+corn oil
+lard
+mustard oil
+olive oil
+palm oil
+peanut oil
+walnut oil
+chicken stock
+fish stock
+beef broth
+chicken broth
+vegetable broth
+fish stock
+chicken stock
+beef broth
+artichoke
+asparagus
+eggplant
+carrot
+elery
+mushroom
+cauliflower
+cucumber
+spinach
+green bean
+onion
+red pepper
+green pepper
+potato
+tomato
+artichoke
+asparagus
+eggplant
+carrot
+cucumber
+green bean
+onion
+potato
+elery
+mushroom
+cauliflower
+spinach
+red pepper
+green pepper
+tomato
