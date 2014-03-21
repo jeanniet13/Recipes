@@ -147,7 +147,7 @@ sauce bourguignonne
 breton sauce
 beurre noir
 beurre noisette
-sauce charcutière
+sauce charcutiere
 chasseur
 nantua sauce
 ravigote
@@ -169,7 +169,7 @@ neapolitan sauce
 rage
 neapolitan ragu
 savore sanguino
-sugo all'amatriciana
+sugo all amatriciana
 sugo alla puttanesca
 vincotto
 vodka sauce
