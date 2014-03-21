@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 # -*- coding: utf8 -*-
 
 #------------------------------east asian---------------------
-=======
-﻿#------------------------------east asian---------------------
->>>>>>> 8e996e830a2298428b8d3f42583fffcff758df18
+
 #sauce
 eastasianSauce = {
     'Doubanjiang',
@@ -83,7 +80,7 @@ bitterEastasianSauce = {
 }
 
 #spice
-eastasainSpice = {
+eastasianSpice = {
     'sugar',
     'salt',
     'chili',
@@ -139,7 +136,7 @@ eastasianOil = {
     'corn oil',
     'peanut oil',
     'soybean oil',
-    'walnut oil
+    'walnut oil'
 }
 
 #liquid
@@ -215,7 +212,7 @@ softEastasianVegetable = {
     'green pepper',
     'red pepper'
     'yard long bean',
-    'winged bean'
+    'winged bean',
     'cherry eggplant'
 }
 
@@ -312,7 +309,7 @@ frenchSpice = {
 
 sweetFrenchSpice = {
     'mustard',
-    'vanilla
+    'vanilla'
 }
 
 sourFrenchSpice = {
@@ -582,15 +579,7 @@ softItalianVegetable = {
     'broccoli',
     'spinach',
     'cauliflower',
-<<<<<<< HEAD
-    'lettuce'
-]
-=======
     'lettuce',
     'celery',
     'eggplant'
 }
-
-
-
->>>>>>> 8e996e830a2298428b8d3f42583fffcff758df18
