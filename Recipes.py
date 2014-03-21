@@ -27,6 +27,69 @@ from cuisineTransformation import italianOil
 from cuisineTransformation import italianLiquid
 from cuisineTransformation import italianVegetable
 
+from cuisineTransformation import sweetEastasianSauce
+from cuisineTransformation import sourEastasianSauce
+from cuisineTransformation import hotEastasianSauce
+from cuisineTransformation import saltyEastasianSauce
+from cuisineTransformation import bitterEastasianSauce
+
+from cuisineTransformation import sweetEastasianSpice
+from cuisineTransformation import sourEastasianSpice
+from cuisineTransformation import hotEastasianSpice
+from cuisineTransformation import saltyEastasianSpice 
+from cuisineTransformation import bitterEastasianSpice 
+
+from cuisineTransformation import sweetEastasianLiquid 
+from cuisineTransformation import sourEastasianLiquid
+from cuisineTransformation import hotEastasianLiquid 
+from cuisineTransformation import saltyEastasianLiquid 
+from cuisineTransformation import bitterEastasianLiquid 
+
+from cuisineTransformation import hardEastasianVegetable 
+from cuisineTransformation import softEastasianVegetable 
+
+from cuisineTransformation import sweetFrenchSauce 
+from cuisineTransformation import sourFrenchSauce 
+from cuisineTransformation import hotFrenchSauce 
+from cuisineTransformation import bitterFrenchSauce 
+from cuisineTransformation import saltyFrenchSauce 
+
+from cuisineTransformation importsweetFrenchSpice 
+from cuisineTransformation import sourFrenchSpice
+from cuisineTransformation import hotFrenchSpice 
+from cuisineTransformation import saltyFrenchSpice 
+from cuisineTransformation import bitterFrenchSpice 
+
+from cuisineTransformation import sweetFrenchLiquid 
+]
+from cuisineTransformation import sourFrenchLiquid
+from cuisineTransformation import hotFrenchLiquid 
+from cuisineTransformation import saltyFrenchLiquid 
+from cuisineTransformation import bitterFrenchLiquid 
+
+from cuisineTransformation import hardFrenchVegetable 
+from cuisineTransformation import softFrenchVegetable 
+
+from cuisineTransformation import sweetItalianSauce 
+from cuisineTransformation import sourItalianSauce 
+from cuisineTransformation import hotItalianSauce 
+from cuisineTransformation import saltyItalianSauce 
+from cuisineTransformation import bitterItalianSpice 
+from cuisineTransformation import sweetItalianSpice 
+from cuisineTransformation import sourItalianSpice 
+from cuisineTransformation import hotItalianSpice 
+from cuisineTransformation import saltyItalianSpice 
+from cuisineTransformation import sweetItalianLiquid 
+
+from cuisineTransformation import sourItalianLiquid 
+from cuisineTransformation import hotItalianLiquid 
+from cuisineTransformation import saltyItalianLiquid 
+from cuisineTransformation import bitterItalianLiquid 
+
+from cuisineTransformation import hardItalianVegetable 
+from cuisineTransformation import softItalianVegetable 
+
+
 from LowFatTransformation import lfingsub
 from LowFatTransformation import lfcooksub
 from LowFatTransformation import hfingsub
