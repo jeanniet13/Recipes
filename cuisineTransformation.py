@@ -1,4 +1,4 @@
-﻿#------------------------------east asian---------------------
+#------------------------------east asian---------------------
 #sauce
 eastasianSauce = {
     'Doubanjiang',
@@ -67,7 +67,7 @@ saltyEastasianSauce = {
     'teriyaki',
     'lobster sauce',
     'shacha sauce',
-    'budu',
+    'budu'
     'garum',
     'nam chim'
     
@@ -77,7 +77,7 @@ bitterEastasianSauce = {
 }
 
 #spice
-eastasianSpice = {
+eastasainSpice = {
     'sugar',
     'salt',
     'chilli',
@@ -112,7 +112,7 @@ sourEastasianSpice = {
 }
 
 hotEastasianSpice = {
-    'chili'
+    'chilli'
 }
 
 saltyEastasianSpice = {
@@ -133,7 +133,7 @@ eastasianOil = {
     'corn oil',
     'peanut oil',
     'soybean oil',
-    'walnut oil'
+    'walnut oil
 }
 
 #liquid
@@ -306,7 +306,7 @@ frenchSpice = {
 
 sweetFrenchSpice = {
     'mustard',
-    'vanilla'
+    'vanilla
 }
 
 sourFrenchSpice = {
@@ -580,6 +580,7 @@ softItalianVegetable = {
     'cauliflower',
     'lettuce'
 }
+
 
 
 
