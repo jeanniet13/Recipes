@@ -47,7 +47,7 @@ soft_list = open('soft.txt', 'rb').read().split('\r\n')
 hard_list = open('hard.txt','rb').read().split('r\n')
 east_asian = open('eastasian.txt','rb').read().split('r\n')
 italian = open('italian.txt','rb').read().split('r\n')
-french = open('eastasian.txt','rb').read().split('r\n')
+french = open('french.txt','rb').read().split('r\n')
 
 
 class Recipe:
