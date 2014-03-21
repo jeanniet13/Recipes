@@ -11,10 +11,13 @@ from vegTransformation import meatsub
 from vegTransformation import vegrank
 
 from cuisineTransformation import *
+<<<<<<< HEAD
 
 from LowFatTransformation import lfingsub
 from LowFatTransformation import lfcooksub
 from LowFatTransformation import hfingsub
+=======
+>>>>>>> b9d14ab7b8123c7e94f6e76ec76fbcfb7e1e96f8
 
 
 cmp_list = open('cookingmethods_primary.txt', 'rb').read().split('\r\n')
@@ -313,14 +316,18 @@ def toEastAsian(recipe):
                             print "is substituted by" , eastasianVegetable[random.randrange(len(eastasianVegetable))]
                 else:
                     print "is substituted by" , eastasianOil[random.randrange(len(eastasianOil))]
+<<<<<<< HEAD
             #else:                
+=======
+
+>>>>>>> b9d14ab7b8123c7e94f6e76ec76fbcfb7e1e96f8
                     
 def toFrench(recipe):
     print "French version"
     for ingredient in recipe.ingredients:
         print ingredient.name
 
-        if ingredient.name in east_asian:
+        if ingredient.name in french:
             break
         else:
             if ingredient.itype is not 'meat':
@@ -385,7 +392,7 @@ def toItalian(recipe):
     for ingredient in recipe.ingredients:
         print ingredient.name
 
-        if ingredient.name in east_asian:
+        if ingredient.name in italian:
             break
         else:
             if ingredient.itype is not 'meat':
