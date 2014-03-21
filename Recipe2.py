@@ -324,7 +324,7 @@ def toFrench(recipe):
     for ingredient in recipe.ingredients:
         print ingredient.name
 
-        if ingredient.name in east_asian:
+        if ingredient.name in french:
             break
 
         else:
@@ -391,7 +391,7 @@ def toItalian(recipe):
     for ingredient in recipe.ingredients:
         print ingredient.name
 
-        if ingredient.name in east_asian:
+        if ingredient.name in italian:
             break
 
         else:
