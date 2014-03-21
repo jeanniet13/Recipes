@@ -1,3 +1,5 @@
+# -*- coding: utf8 -*-
+
 #------------------------------east asian---------------------
 #sauce
 eastasianSauce = [
@@ -580,10 +582,3 @@ softItalianVegetable = [
     'cauliflower',
     'lettuce'
 ]
-
-
-
-
-
-
-

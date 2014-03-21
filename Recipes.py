@@ -40,12 +40,16 @@ oil_list = open('oil.txt', 'rb').read().split('\r\n')
 liquid_list = open('liquid.txt', 'rb').read().split('\r\n')
 spice_list = open('spices.txt', 'rb').read().split('\r\n')
 sauce_list = open('sauce.txt', 'rb').read().split('\r\n')
+
 sour_list = open('sour.txt','rb').read().split('r\n')
 hot_list = open('hot.txt', 'rb').read().split('\r\n')
 sweet_list = open('sweet.txt', 'rb').read().split('\r\n')
 salty_list = open('salty.txt','rb').read().split('r\n')
 soft_list = open('soft.txt', 'rb').read().split('\r\n')
 hard_list = open('hard.txt','rb').read().split('r\n')
+east_asian = open('eastasian.txt','rb').read().split('r\n')
+italian = open('italian.txt','rb').read().split('r\n')
+french = open('eastasian.txt','rb').read().split('r\n')
 
 
 class Recipe:
@@ -126,7 +130,7 @@ def parse(link, recipe):
                     break
 
         if newIngredient.itype == '':
-            for mean in meat_list:
+            for meat in meat_list:
                 if (" " + meat) in ingname:
                     newIngredient.itype = 'meat'
                     tempname = veg
@@ -468,11 +472,11 @@ def main():
     printJson(recipe)
    # print eastasianOil(random.randrange(len(eastasianOil)))
     #print eastasianOil[0]
-    #toVeg(recipe)
-    #toMeat(recipe)
+    toVeg(recipe)
+    toMeat(recipe)
     #toLowFat(recipe)
     #toHighFat(recipe)
-    toEastAsian(recipe)
+    #toEastAsian(recipe)
     print eastasianSauce[random.randrange(len(eastasianSauce))]
 
 main()
