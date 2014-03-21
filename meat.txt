@@ -59,6 +59,7 @@ pork rib
 pork loin
 pork loin roast
 pork sparerib
+pork butt steak
 ground pork
 pork roll
 spam
