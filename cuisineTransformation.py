@@ -80,7 +80,7 @@ bitterEastasianSauce = {
 eastasainSpice = {
     'sugar',
     'salt',
-    'chilli',
+    'chili',
     'chinese chives',
     'cassia bark',
     'fresh coriander',
@@ -112,7 +112,7 @@ sourEastasianSpice = {
 }
 
 hotEastasianSpice = {
-    'chilli'
+    'chili'
 }
 
 saltyEastasianSpice = {
@@ -188,12 +188,10 @@ eastasianVegetable = {
 }
 
 hardEastasianVegetable = {
+    'bamboo shoot',
     'daikon',
     'garlic',
     'thai eggplant',
-    'cherry egg plant',
-    'yard long bean',
-    'winged bean',
     'water chestnut',
     'potato',
     'onion'
@@ -203,7 +201,6 @@ softEastasianVegetable = {
     'napa cabbage',
     'chinese flowering cabbage',
     'chinese broccoli',
-    'bamboo shoot',
     'beansprout',
     'chinese white cabbage',
     'chinese dried mushroom',
@@ -211,6 +208,9 @@ softEastasianVegetable = {
     'tomato',
     'green pepper',
     'red pepper'
+    'yard long bean',
+    'winged bean'
+    'cherry eggplant',
 }
 
 #------------------------------------French------------------------
@@ -375,7 +375,7 @@ frenchVegetable = {
     'asparagus',
     'eggplant',
     'carrot',
-    'elery',
+    'celery',
     'mushroom',
     'cauliflower',
     'cucumber',
@@ -391,16 +391,16 @@ frenchVegetable = {
 hardFrenchVegetable = {
     'artichoke',
     'asparagus',
-    'eggplant',
     'carrot',
     'cucumber',
-    'green bean',
     'onion',
     'potato'
 }
 
 softFrenchVegetable = {
-    'elery',
+    'eggplant',
+    'green bean',
+    'celery',
     'mushroom',
     'cauliflower',
     'spinach',
@@ -562,11 +562,9 @@ italianVegetable = {
 hardItalianVegetable = {
     'garlic',
     'onion',
-    'eggplant',
     'zucchini',
     'artichokes',
     'fennel',
-    'celery',
     'asparagus'
 }
 
@@ -578,7 +576,9 @@ softItalianVegetable = {
     'broccoli',
     'spinach',
     'cauliflower',
-    'lettuce'
+    'lettuce',
+    'celery',
+    'eggplant'
 }
 
 

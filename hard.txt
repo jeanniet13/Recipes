@@ -4,3 +4,13 @@ squash
 carrot
 radish
 bamboo shoot
+daikon
+thai eggplant
+garlic
+water chestnut
+onion
+potato
+artichoke
+asparagus
+zucchini 
+fennel
