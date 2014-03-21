@@ -1,27 +1,170 @@
-coriander
-ginger
-nutmeg
-black pepper
-white pepper
-saffon
-salt
-vanilla
-basil
-bay leaves
-borage 
-ennel
-juniper
-marjoram, Sweet
-myrtle
-oregano
-parsley
-rosemary
-sage
-olive oil
-garlic
-thyme
+#sauce
+italianSauce = {
+    'amatriciana sauce',
+    'arrabbiata sauce',
+    'bechamel sauce',
+    'bigoli in salsa',
+    'bolognese sauce',
+    'cacio e pepe',
+    'carbonara',
+    'clam sauce',
+    'genovese sauce',
+    'green sauce',
+    'gremolata',
+    'marinara sauce',
+    'neapolitan ragu',
+    'pesto',
+    'ragu',
+    'salmoriglio',
+    'sugo alla puttanesca',
+    'tomato sauce',
+    'vodka sauce'
+}
 
+sweetItalianSauce = {
+    'marinara sauce',
+    'tomato sauce'
+}
 
-//sources: http://cooking.stackexchange.com/questions/1485/what-herbs-and-spices-are-in-italian-seasoning
-//http://www.calascio.com/spices&.htm
-//http://www.cafemancini.com/spices-used-in-italian-cuisine.php
+sourItalianSauce = {
+    'amatriciana sauce',
+    'arrabbiata sauce',
+    'bolognese sauce',
+    'marinara sauce'
+}
+
+hotItalianSauce = {
+    'tomato sauce'
+}
+
+saltyItalianSauce = {
+    'bechamel sauce',
+    'bigoli in salsa',
+    'sugo alla puttanesca'
+}
+
+bitterItalianSauce = {
+}
+
+#spice
+italianSpice = {
+    'sugar',
+    'salt',
+    'garlic',
+    'bay leaves',
+    'basil',
+    'onion',
+    'fennel',
+    'mint',
+    'calamintha nepeta',
+    'oregano',
+    'chili pepper',
+    'parsley',
+    'rosemary',
+    'sage',
+    'thyme'
+}
+
+sweetItalianSpice = {
+    'sugar'
+}
+
+sourItalianSpice = {
+}
+
+hotItalianSpice = {
+    'chili pepper'
+}
+
+saltyItalianSpice = {
+    'salt'
+}
+
+bitterItalianSpice = {
+    'basil'
+}
+
+#oil
+italianOil = {
+    'almond oil',
+    'avocado oil',
+    'butter',
+    'canola oil',
+    'coconut oil',
+    'corn oil',
+    'lard',
+    'mustard oil',
+    'olive oil',
+    'palm oil',
+    'peanut oil',
+    'walnut oil'
+}
+
+#liquid
+italianLiquid = {
+    'chicken stock',
+    'fish stock',
+    'beef broth',
+    'chicken broth',
+    'vegetable broth'
+}
+
+sweetItalianLiquid = {
+}
+
+sourItalianLiquid = {
+}
+
+hotItalianLiquid = {
+}
+
+saltyItalianLiquid = {
+    'chicken stock',
+    'fish stock',
+    'beef broth'
+}
+
+bitterItalianLiquid = {
+}
+
+#vegetable
+italianVegetable = {
+    'tomato',
+    'garlic',
+    'onion',
+    'bell pepper',
+    'eggplant',
+    'cabbage',
+    'zucchini',
+    'artichokes',
+    'fennel',
+    'mushroom',
+    'celery',
+    'asparagus',
+    'broccoli',
+    'spinach',
+    'cauliflower',
+    'lettuce'
+}
+
+hardItalianVegetable = {
+    'garlic',
+    'onion',
+    'eggplant',
+    'zucchini',
+    'artichokes',
+    'fennel',
+    'celery',
+    'asparagus'
+}
+
+softItalianVegetable = {
+    'tomato',
+    'bell pepper',
+    'cabbage',
+    'mushroom',
+    'broccoli',
+    'spinach',
+    'cauliflower',
+    'lettuce'
+}
