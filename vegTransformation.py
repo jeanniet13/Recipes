@@ -46,6 +46,8 @@ meatsub = {
   'beef tri-tip':'tofu',
   'beef short loin':'tofu',
   'beef chuck':'tofu',
+  'pork butt steak':'tofu',
+  'steak':'seitan',
   'ground beef':'black bean',
   'ground beef chuck':'black bean',
   'rump roast':'tempeh',
