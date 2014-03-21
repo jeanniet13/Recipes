@@ -1,37 +1,214 @@
-soy sauce
-rice vinegar
-fish sauce
-chili sauce
-oyster sauce
-coconut milk
-curry paste
-miso paste
-sesame oil
-rice wine
-ginger
-lime
-cilantro
-black bean sauce
-five-spice powder
-garlic
-black pepper
-star anise
-fennel seed
-clove
-cinnamon
-cardamon
-nutmeg
-coriander
-white pepper
-lemongrass
-mint
-salt
-vinegar
-yuzu
-sesame seed
-perilla
-trefoil
-red pepper
-green onion
+
+eastasianSauce = {
+    'Doubanjiang',
+    'sweet bean sauce',
+    'hoisin sauce',
+    'oyster sauce',
+    'pouzu',
+    'mala sauce',
+    'soy sauce',
+    'sriracha sauce',
+    'ssamjang',
+    'XO sauce',
+    'lobster sauce',
+    'shacha sauce',
+    'siu haau sauce',
+    'sweet and sour sauce',
+    'tianmianjiang',
+    'teriyaki',
+    'budu',
+    'fish sauce',
+    'garum',
+    'nam chim',
+    'nam phrik',
+    'padaek',
+    'pla ra',
+    'sambal',
+    'satay sauce',
+    'peanut sauce',
+    'sweet soy sauce',
+    'tentsuyu'
+}
+
+sweetEastasianSauce = {
+    'siu haau sauce',
+    'sweet bean sauce',
+    'sweet and sour sauce',
+    'sweet soy sauce',
+    'oyster sauce',
+    'peanut sauce',
+    'tianmianjiang',
+    'nam chim'
+}
+
+sourEastasianSauce = {
+    'sweet and sour sauce',
+    'nam chim'
+}
+
+hotEastasianSauce = {
+    'nam phrik',
+    'ssamjang',
+    'mala sauce',
+    'xo sauce',
+    'doubanjiang',
+    'sambal',
+    'sriracha sauce',
+    'nam chim'
+}
+
+saltyEastasianSauce = {
+    'fish sauce',
+    'satay sauce',
+    'tentsuyu',
+    'Doubanjiang',
+    'pla ra',
+    'teriyaki',
+    'lobster sauce',
+    'shacha sauce',
+    'budu'
+    'garum',
+    'nam chim'
+    
+}
+
+bitterEastasianSauce = {
+}
+
+#spice
+eastasainSpice = {
+    'sugar',
+    'salt',
+    'chilli',
+    'chinese chives',
+    'cassia bark',
+    'fresh coriander',
+    'curry leaves',
+    'fenugreek',
+    'galangal',
+    'ginger',
+    'golden needle',
+    'kaffir lime leaves',
+    'lemongrass',
+    'star anise',
+    'thai basil',
+    'cardamons',
+    'cloves',
+    'coriander',
+    'cumin',
+    'fenugreek seeds',
+    'five spice',
+    'nigella',
+    'seven spice',
+    'turmeric'
+}
+
+sweetEastasianSpice = {
+    'sugar'
+}
+
+sourEastasianSpice = {
+}
+
+hotEastasianSpice = {
+    'chilli'
+}
+
+saltyEastasianSpice = {
+    'salt'
+}
+
+bitterEastasianSpice = {
+    'ginger'
+}
+
+#oil
+eastasianOil = {
+    'sesame oil',
+    'lard',
+    'olive oil',
+    'corn oil',
+    'canola oil',
+    'corn oil',
+    'peanut oil',
+    'soybean oil',
+    'walnut oil
+}
+
+#liquid
+eastasianLiquid = {
+    'rice vinegar',
+    'vinegar',
+    'cooking wine',
+    'chicken stock'
+}
+
+sweetEastasianLiquid = {
+}
+
+sourEastasianLiquid = {
+    'rice vinegar',
+    'vinegar'
+}
+
+hotEastasianLiquid = {
+}
+
+saltyEastasianLiquid = {
+    'cooking wine',
+    'chicken stock'
+}
+
+bitterEastasianLiquid = {
+}
+
+#vegetable
+eastasianVegetable = {
+    'napa cabbage',
+    'chinese flowering cabbage',
+    'chinese broccoli',
+    'bamboo shoot',
+    'beansprout',
+    'daikon',
+    'garlic',
+    'chinese white cabbage',
+    'thai eggplant',
+    'cherry egg plant',
+    'yard long bean',
+    'winged bean',
+    'water chestnut',
+    'chinese dried mushroom',
+    'straw mushroom',
+    'potato',
+    'tomato',
+    'onion',
+    'green pepper',
+    'red pepper',
+}
+
+hardEastasianVegetable = {
+    'daikon',
+    'garlic',
+    'thai eggplant',
+    'cherry egg plant',
+    'yard long bean',
+    'winged bean',
+    'water chestnut',
+    'potato',
+    'onion'
+}
+
+softEastasianVegetable = {
+    'napa cabbage',
+    'chinese flowering cabbage',
+    'chinese broccoli',
+    'bamboo shoot',
+    'beansprout',
+    'chinese white cabbage',
+    'chinese dried mushroom',
+    'straw mushroom',
+    'tomato',
+    'green pepper',
+    'red pepper']
 
 

@@ -210,7 +210,7 @@ softEastasianVegetable = {
     'red pepper'
     'yard long bean',
     'winged bean'
-    'cherry eggplant',
+    'cherry eggplant'
 }
 
 #------------------------------------French------------------------
@@ -563,7 +563,7 @@ hardItalianVegetable = {
     'garlic',
     'onion',
     'zucchini',
-    'artichokes',
+    'artichoke',
     'fennel',
     'asparagus'
 }
