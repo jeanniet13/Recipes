@@ -26,9 +26,9 @@ from cuisineTransformation import italianOil
 from cuisineTransformation import italianLiquid
 from cuisineTransformation import italianVegetable
 
-
 from LowFatTransformation import lfingsub
 from LowFatTransformation import lfcooksub
+from LowFatTransformation import hfingsub
 
 
 cmp_list = open('cookingmethods_primary.txt', 'rb').read().split('\r\n')
@@ -197,6 +197,17 @@ def toLowFat(recipe):
                 break
     if ishealthy==1:
         print "Recipe already healthy, no substitutions made."
+        
+def toHighFat(recipe):
+    isNOThealthy = 1
+    for ingredient in recipe.ingredients:
+        for key in hfingsub.keys():
+            if key in ingredient.name:
+                print "Substitue "+ingredient.name+" with "+hfingsub[key]
+                isNOThealthy = 0
+                break
+    if isNOThealthy==1:
+        print "Recipe already high-fat, no substitutions made."
 
 def toVeg(recipe):
     if isVeg(recipe):
@@ -461,6 +472,8 @@ def main():
     #print eastasianOil[0]
     #toVeg(recipe)
     #toMeat(recipe)
+    #toLowFat(recipe)
+    #toHighFat(recipe)
     toEastAsian(recipe)
     print eastasianSauce[random.randrange(len(eastasianSauce))]
 
