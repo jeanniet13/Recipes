@@ -31,3 +31,9 @@ lfingsub = {
     'cream cheese':'fat-free ricotta cheese',
     'white rice':'brown rice'
 }
+lfcooksub = {
+    'fry':'bake',
+    'boil':'steam',
+    'deep-fry':'bake',
+    'pan fry':'bake'
+}
