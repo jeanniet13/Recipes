@@ -50,7 +50,7 @@ soft_list = open('soft.txt', 'rb').read().split('\r\n')
 hard_list = open('hard.txt','rb').read().split('r\n')
 east_asian = open('eastasian.txt','rb').read().split('r\n')
 italian = open('italian.txt','rb').read().split('r\n')
-french = open('eastasian.txt','rb').read().split('r\n')
+french = open('french.txt','rb').read().split('r\n')
 
 
 class Recipe:
@@ -80,21 +80,31 @@ def parse(link, recipe):
     recipe_html = recipe_url.read()
     soup = BeautifulSoup(recipe_html)
 
-    for quantity, ingredient in zip(soup.find_all(id='lblIngAmount'), soup.find_all(id='lblIngName')):
+    ings = soup.find_all(id='liIngredient')
+    for i in range(0,len(ings)):
         newIngredient = Ingredient()
-        
-        quantity = quantity.contents[0].encode('utf-8').split(' ', 1)        
-        newIngredient.quantity = float(fractions.Fraction(quantity[0]))
-        if len(quantity) > 1:
-            newIngredient.measurement = quantity[1].lower()
+        quantity = ings[i].select('span#lblIngAmount')
+        ingredient = ings[i].select('span#lblIngName')
+
+        if len(quantity) > 0:
+            quantity = quantity[0].contents[0].encode('utf-8').split(' ', 1)
+            newIngredient.quantity = float(fractions.Fraction(quantity[0]))
+            if len(quantity) > 1:
+                newIngredient.measurement = quantity[1].lower()
             
-        ingredient = (ingredient.contents)[0].encode('utf-8').lower().split(', ',1)
-        # attempting nltk pos tagger, but it's really bad with short phrases
-##        tags = nltk.pos_tag(nltk.word_tokenize(ingredient))
-##        for (word, pos) in tags:
-##            if "NN" in pos:               
+        ingredient = ingredient[0].contents[0].encode('utf-8').lower().split(', ',1)
+##    for quantity, ingredient in zip(soup.find_all(id='lblIngAmount'), soup.find_all(id='lblIngName')):
+##        newIngredient = Ingredient()
+##        
+##        quantity = quantity.contents[0].encode('utf-8').split(' ', 1)        
+##        newIngredient.quantity = float(fractions.Fraction(quantity[0]))
+##        if len(quantity) > 1:
+##            newIngredient.measurement = quantity[1].lower()
+            
+##        ingredient = (ingredient.contents)[0].encode('utf-8').lower().split(', ',1)              
             
         ingname = " " + ''.join(ingredient)
+        print ingname
         tempname = ""
         for liquid in liquid_list:
             if (" " + liquid) in ingname:
@@ -134,13 +144,12 @@ def parse(link, recipe):
             for meat in meat_list:
                 if (" " + meat) in ingname:
                     newIngredient.itype = 'meat'
-                    tempname = veg
-                    break
-       
+                    tempname = meat
+                    break       
 
         if newIngredient.itype == '':
             tempname = ingredient[0]
-
+        
         newIngredient.name = tempname
         #newIngredient.name = ingredient[0]
         if len(ingredient) > 1:
@@ -187,6 +196,7 @@ def parse(link, recipe):
     #print recipe.tools
 
 def toLowFat(recipe):
+    print "Low-fat version"
     ishealthy = 1
     for ingredient in recipe.ingredients:
         for key in lfingsub.keys():
@@ -204,6 +214,7 @@ def toLowFat(recipe):
         print "Recipe already healthy, no substitutions made."
         
 def toHighFat(recipe):
+    print "Normal, non-low-fat version"
     isNOThealthy = 1
     for ingredient in recipe.ingredients:
         for key in hfingsub.keys():
@@ -216,6 +227,7 @@ def toHighFat(recipe):
         
 
 def toVeg(recipe):
+    print "Vegetarian version"
     if isVeg(recipe):
         print "Recipe is already vegetarian."
         return
@@ -224,7 +236,7 @@ def toVeg(recipe):
             if ingredient.itype == 'meat':
                 for key in sorted(meatsub.keys()):
                     if key in ingredient.name:
-                        print meatsub[key]
+                        print "Substitute", ingredient.name, "with", meatsub[key] 
                         break
                 #print "replace with veg"
             elif ingredient.itype == 'liquid' and 'vegetable' not in ingredient.name:
@@ -237,6 +249,7 @@ def toVeg(recipe):
                 print ingredient.name
 
 def toMeat(recipe):
+    print "Non-vegetarian version"
     if not isVeg(recipe):
         print "Recipe already has meat in it."
         return
@@ -252,7 +265,7 @@ def toMeat(recipe):
                     reping = ingredient.name
         for ingredient in recipe.ingredients:
             if ingredient.name == reping:
-                print vegsub[repkey]
+                print "Substitute", ingredient.name, "with", vegsub[repkey]
             else:
                 print ingredient.name
         if rank < 100:
@@ -266,7 +279,7 @@ def isVeg(recipe):
 
 
 def toEastAsian(recipe):
-
+    print "East Asian version"
     for ingredient in recipe.ingredients:
         print ingredient.name
         if ingredient.itype is 'oil':
@@ -278,7 +291,6 @@ def toEastAsian(recipe):
             break
 
         else:
-
             if ingredient.itype is not 'meat':
                 if ingredient.itype is not 'oil':
                     if ingredient.itype is not 'veggie':
@@ -338,6 +350,7 @@ def toEastAsian(recipe):
                 print"Did I get here"
                     
 def toFrench(recipe):
+    print "French version"
     for ingredient in recipe.ingredients:
         print ingredient.name
 
@@ -402,6 +415,7 @@ def toFrench(recipe):
 
 
 def toItalian(recipe):
+    "Italian version"
     for ingredient in recipe.ingredients:
         print ingredient.name
 
@@ -486,12 +500,34 @@ def main():
     recipe = Recipe()
     parse(link, recipe)
     printJson(recipe)
-    toVeg(recipe)
-    #toMeat(recipe)
-    toLowFat(recipe)
-    #toHighFat(recipe)
-    toEastAsian(recipe)
-    toFrench(recipe)
+    transform = raw_input("What kind of transform would you like to do? (Enter a number) 1- Vegetarian, 2- Cuisine, 3- To/From Low-fat ")
+    if transform == '2':
+        transform2 = raw_input("What kind of cuisine would you like to do? (Enter a number) 1- East Asian, 2- French, 3- Italian ")
+        if transform2 == '1':
+            toEastAsian(recipe)
+        elif transform2 == '2':
+            toFrench(recipe)
+        elif transform2 == '3':
+            toItalian(recipe)
+        else:
+            print "Invalid entry. Exiting."
+    elif transform == '1':
+        transform2 = raw_input("1- To vegetarian, 2- From vegetarian ")
+        if transform2 == '1':
+            toVeg(recipe)
+        elif transform2 == '2':
+            toMeat(recipe)
+        else:
+            print "Invalid entry. Exiting."
+    elif transform == '3':
+        transform2 = raw_input("1- To low-fat, 2- To high-fat/regular ")
+        if transform2 == '1':
+            toLowFat(recipe)
+        elif transform2 == '2':
+            toHighFat(recipe)
+    else:
+        print "Invalid entry. Exiting."
+
 
 main()
 
