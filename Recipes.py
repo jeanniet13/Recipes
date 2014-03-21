@@ -1,5 +1,4 @@
 # -*- coding: utf8 -*-
-import nltk
 import urllib2
 import re
 import fractions
@@ -12,84 +11,6 @@ from vegTransformation import meatsub
 from vegTransformation import vegrank
 
 from cuisineTransformation import *
-##from cuisineTransformation import eastasianSauce
-##from cuisineTransformation import eastasianSpice
-##from cuisineTransformation import eastasianOil
-##from cuisineTransformation import eastasianLiquid
-##from cuisineTransformation import eastasianVegetable
-##from cuisineTransformation import frenchSauce
-##from cuisineTransformation import frenchSpice
-##from cuisineTransformation import frenchOil
-##from cuisineTransformation import frenchLiquid
-##from cuisineTransformation import frenchVegetable
-##from cuisineTransformation import italianSauce
-##from cuisineTransformation import italianSpice
-##from cuisineTransformation import italianOil
-##from cuisineTransformation import italianLiquid
-##from cuisineTransformation import italianVegetable
-
-from cuisineTransformation import sweetEastasianSauce
-from cuisineTransformation import sourEastasianSauce
-from cuisineTransformation import hotEastasianSauce
-from cuisineTransformation import saltyEastasianSauce
-from cuisineTransformation import bitterEastasianSauce
-
-from cuisineTransformation import sweetEastasianSpice
-from cuisineTransformation import sourEastasianSpice
-from cuisineTransformation import hotEastasianSpice
-from cuisineTransformation import saltyEastasianSpice 
-from cuisineTransformation import bitterEastasianSpice 
-
-from cuisineTransformation import sweetEastasianLiquid 
-from cuisineTransformation import sourEastasianLiquid
-from cuisineTransformation import hotEastasianLiquid 
-from cuisineTransformation import saltyEastasianLiquid 
-from cuisineTransformation import bitterEastasianLiquid 
-
-from cuisineTransformation import hardEastasianVegetable 
-from cuisineTransformation import softEastasianVegetable 
-
-from cuisineTransformation import sweetFrenchSauce 
-from cuisineTransformation import sourFrenchSauce 
-from cuisineTransformation import hotFrenchSauce 
-from cuisineTransformation import bitterFrenchSauce 
-from cuisineTransformation import saltyFrenchSauce 
-
-from cuisineTransformation importsweetFrenchSpice 
-from cuisineTransformation import sourFrenchSpice
-from cuisineTransformation import hotFrenchSpice 
-from cuisineTransformation import saltyFrenchSpice 
-from cuisineTransformation import bitterFrenchSpice 
-
-from cuisineTransformation import sweetFrenchLiquid 
-]
-from cuisineTransformation import sourFrenchLiquid
-from cuisineTransformation import hotFrenchLiquid 
-from cuisineTransformation import saltyFrenchLiquid 
-from cuisineTransformation import bitterFrenchLiquid 
-
-from cuisineTransformation import hardFrenchVegetable 
-from cuisineTransformation import softFrenchVegetable 
-
-from cuisineTransformation import sweetItalianSauce 
-from cuisineTransformation import sourItalianSauce 
-from cuisineTransformation import hotItalianSauce 
-from cuisineTransformation import saltyItalianSauce 
-from cuisineTransformation import bitterItalianSpice 
-from cuisineTransformation import sweetItalianSpice 
-from cuisineTransformation import sourItalianSpice 
-from cuisineTransformation import hotItalianSpice 
-from cuisineTransformation import saltyItalianSpice 
-from cuisineTransformation import sweetItalianLiquid 
-
-from cuisineTransformation import sourItalianLiquid 
-from cuisineTransformation import hotItalianLiquid 
-from cuisineTransformation import saltyItalianLiquid 
-from cuisineTransformation import bitterItalianLiquid 
-
-from cuisineTransformation import hardItalianVegetable 
-from cuisineTransformation import softItalianVegetable 
-
 
 from LowFatTransformation import lfingsub
 from LowFatTransformation import lfcooksub
@@ -157,15 +78,6 @@ def parse(link, recipe):
                 newIngredient.measurement = quantity[1].lower()
             
         ingredient = ingredient[0].contents[0].encode('utf-8').lower().split(', ',1)
-##    for quantity, ingredient in zip(soup.find_all(id='lblIngAmount'), soup.find_all(id='lblIngName')):
-##        newIngredient = Ingredient()
-##        
-##        quantity = quantity.contents[0].encode('utf-8').split(' ', 1)        
-##        newIngredient.quantity = float(fractions.Fraction(quantity[0]))
-##        if len(quantity) > 1:
-##            newIngredient.measurement = quantity[1].lower()
-            
-##        ingredient = (ingredient.contents)[0].encode('utf-8').lower().split(', ',1)              
             
         ingname = " " + ''.join(ingredient)
         print ingname
@@ -255,10 +167,6 @@ def parse(link, recipe):
                 if tool in sentence2 and tool not in recipe.tools:
                     recipe.tools.append(tool)
 
-    #print recipe.cooking_methods
-    #print recipe.preparation_methods
-    #print recipe.tools
-
 def toLowFat(recipe):
     print "Low-fat version"
     ishealthy = 1
@@ -346,10 +254,6 @@ def toEastAsian(recipe):
     print "East Asian version"
     for ingredient in recipe.ingredients:
         print ingredient.name
-        if ingredient.itype is 'oil':
-            print 1
-        else:
-            print 0
 
         if ingredient.name in east_asian:
             break
@@ -409,8 +313,7 @@ def toEastAsian(recipe):
                             print "is substituted by" , eastasianVegetable[random.randrange(len(eastasianVegetable))]
                 else:
                     print "is substituted by" , eastasianOil[random.randrange(len(eastasianOil))]
-            else:
-                print"Did I get here"
+            #else:                
                     
 def toFrench(recipe):
     print "French version"
@@ -488,7 +391,6 @@ def toItalian(recipe):
             if ingredient.itype is not 'meat':
                 if ingredient.itype is not 'oil':
                     if ingredient.itype is not 'vegetable':
-
                         if ingredient.name in sweet_list:
                             if ingredient.itype is 'sauce':
                                 print 'is substituted by', sweetItalianSauce[random.randrange(len(sweetItalianSauce))]
@@ -540,7 +442,6 @@ def toItalian(recipe):
                             print "is substituted by" , italianVegetable[random.randrange(len(italianVegetable))]
                 else:
                     print "is substituted by" , italianOil[random.randrange(len(italianOil))]
-
 
 def printJson(recipe):
     jsonoutput = {}
@@ -594,5 +495,3 @@ def main():
 
 main()
 
-#text = nltk.word_tokenize("chopped fresh parsley")
-#print nltk.pos_tag(text)
