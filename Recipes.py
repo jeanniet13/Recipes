@@ -28,6 +28,7 @@ from cuisineTransformation import italianVegetable
 
 
 from LowFatTransformation import lfingsub
+from LowFatTransformation import lfcooksub
 
 
 cmp_list = open('cookingmethods_primary.txt', 'rb').read().split('\r\n')
@@ -179,14 +180,23 @@ def parse(link, recipe):
     #print recipe.cooking_methods
     #print recipe.preparation_methods
     #print recipe.tools
+
 def toLowFat(recipe):
+    ishealthy = 1
     for ingredient in recipe.ingredients:
         for key in lfingsub.keys():
             if key in ingredient.name:
-                print lfingsub[key]
+                print "Substitue "+ingredient.name+" with "+lfingsub[key]
+                ishealthy = 0
                 break
-    print "Recipe already healthy, no substitutions made."
-
+    for method in Recipe.cooking_methods:
+        for key in lfcooksub.keys():
+            if key in method:
+                print "Substitute "+method+" with "+lfcooksub[key]
+                ishealthy = 0
+                break
+    if ishealthy==1:
+        print "Recipe already healthy, no substitutions made."
 
 def toVeg(recipe):
     if isVeg(recipe):
