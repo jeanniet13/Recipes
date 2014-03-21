@@ -32,7 +32,7 @@ eastasianSauce = [
     'tentsuyu'
 ]
 
-sweetEastasianSauce = [
+sweetEastAsianSauce = [
     'siu haau sauce',
     'sweet bean sauce',
     'sweet and sour sauce',
@@ -43,12 +43,12 @@ sweetEastasianSauce = [
     'nam chim'
 ]
 
-sourEastasianSauce = [
+sourEastAsianSauce = [
     'sweet and sour sauce',
     'nam chim'
 ]
 
-hotEastasianSauce = [
+hotEastAsianSauce = [
     'nam phrik',
     'ssamjang',
     'mala sauce',
@@ -59,7 +59,7 @@ hotEastasianSauce = [
     'nam chim'
 ]
 
-saltyEastasianSauce = [
+saltyEastAsianSauce = [
     'fish sauce',
     'satay sauce',
     'tentsuyu',
@@ -74,7 +74,7 @@ saltyEastasianSauce = [
     
 ]
 
-bitterEastasianSauce = [
+bitterEastAsianSauce = [
 ]
 
 #spice
@@ -105,22 +105,22 @@ eastasianSpice = [
     'turmeric'
 ]
 
-sweetEastasianSpice = [
+sweetEastAsianSpice = [
     'sugar'
 ]
 
-sourEastasianSpice = [
+sourEastAsianSpice = [
 ]
 
-hotEastasianSpice = [
+hotEastAsianSpice = [
     'chilli'
 ]
 
-saltyEastasianSpice = [
+saltyEastAsianSpice = [
     'salt'
 ]
 
-bitterEastasianSpice = [
+bitterEastAsianSpice = [
     'ginger'
 ]
 
