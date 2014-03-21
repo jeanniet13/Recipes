@@ -251,10 +251,7 @@ def toEastAsian(recipe):
     print "East Asian version"
     for ingredient in recipe.ingredients:
         print ingredient.name
-<<<<<<< HEAD
-        
-=======
->>>>>>> a35e89cdacd187d1a1c92b8003ccaf8d389f25b1
+
         if ingredient.name in east_asian:
             break
         elif (ingredient.itype is 'spice') or (ingredient.itype is 'sauce') or (ingredient.itype is 'liquid'):
