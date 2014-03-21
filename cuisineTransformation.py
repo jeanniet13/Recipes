@@ -1,6 +1,6 @@
 #------------------------------east asian---------------------
 #sauce
-eastasianSauce = {
+eastasianSauce = [
     'Doubanjiang',
     'sweet bean sauce',
     'hoisin sauce',
@@ -29,9 +29,9 @@ eastasianSauce = {
     'peanut sauce',
     'sweet soy sauce',
     'tentsuyu'
-}
+]
 
-sweetEastasianSauce = {
+sweetEastasianSauce = [
     'siu haau sauce',
     'sweet bean sauce',
     'sweet and sour sauce',
@@ -40,14 +40,14 @@ sweetEastasianSauce = {
     'peanut sauce',
     'tianmianjiang',
     'nam chim'
-}
+]
 
-sourEastasianSauce = {
+sourEastasianSauce = [
     'sweet and sour sauce',
     'nam chim'
-}
+]
 
-hotEastasianSauce = {
+hotEastasianSauce = [
     'nam phrik',
     'ssamjang',
     'mala sauce',
@@ -56,9 +56,9 @@ hotEastasianSauce = {
     'sambal',
     'sriracha sauce',
     'nam chim'
-}
+]
 
-saltyEastasianSauce = {
+saltyEastasianSauce = [
     'fish sauce',
     'satay sauce',
     'tentsuyu',
@@ -71,13 +71,13 @@ saltyEastasianSauce = {
     'garum',
     'nam chim'
     
-}
+]
 
-bitterEastasianSauce = {
-}
+bitterEastasianSauce = [
+]
 
 #spice
-eastasainSpice = {
+eastasianSpice = [
     'sugar',
     'salt',
     'chilli',
@@ -102,29 +102,29 @@ eastasainSpice = {
     'nigella',
     'seven spice',
     'turmeric'
-}
+]
 
-sweetEastasianSpice = {
+sweetEastasianSpice = [
     'sugar'
-}
+]
 
-sourEastasianSpice = {
-}
+sourEastasianSpice = [
+]
 
-hotEastasianSpice = {
+hotEastasianSpice = [
     'chilli'
-}
+]
 
-saltyEastasianSpice = {
+saltyEastasianSpice = [
     'salt'
-}
+]
 
-bitterEastasianSpice = {
+bitterEastasianSpice = [
     'ginger'
-}
+]
 
 #oil
-eastasianOil = {
+eastasianOil = [
     'sesame oil',
     'lard',
     'olive oil',
@@ -133,38 +133,38 @@ eastasianOil = {
     'corn oil',
     'peanut oil',
     'soybean oil',
-    'walnut oil
-}
+    'walnut oil'
+]
 
 #liquid
-eastasianLiquid = {
+eastasianLiquid = [
     'rice vinegar',
     'vinegar',
     'cooking wine',
     'chicken stock'
-}
+]
 
-sweetEastasianLiquid = {
-}
+sweetEastasianLiquid = [
+]
 
-sourEastasianLiquid = {
+sourEastasianLiquid = [
     'rice vinegar',
     'vinegar'
-}
+]
 
-hotEastasianLiquid = {
-}
+hotEastasianLiquid = [
+]
 
-saltyEastasianLiquid = {
+saltyEastasianLiquid = [
     'cooking wine',
     'chicken stock'
-}
+]
 
-bitterEastasianLiquid = {
-}
+bitterEastasianLiquid = [
+]
 
 #vegetable
-eastasianVegetable = {
+eastasianVegetable = [
     'napa cabbage',
     'chinese flowering cabbage',
     'chinese broccoli',
@@ -185,9 +185,9 @@ eastasianVegetable = {
     'onion',
     'green pepper',
     'red pepper',
-}
+]
 
-hardEastasianVegetable = {
+hardEastasianVegetable = [
     'daikon',
     'garlic',
     'thai eggplant',
@@ -197,9 +197,9 @@ hardEastasianVegetable = {
     'water chestnut',
     'potato',
     'onion'
-}
+]
 
-softEastasianVegetable = {
+softEastasianVegetable = [
     'napa cabbage',
     'chinese flowering cabbage',
     'chinese broccoli',
@@ -211,11 +211,11 @@ softEastasianVegetable = {
     'tomato',
     'green pepper',
     'red pepper'
-}
+]
 
 #------------------------------------French------------------------
 #sauce
-frenchSauce = {
+frenchSauce = [
     'Sauce bechamel',
     'Sauce espagnole',
     'sauce veloute',
@@ -238,25 +238,25 @@ frenchSauce = {
     'Sauce poivrade',
     'Soubise sauce',
     'Velouté sauce'
-}
+]
 
-sweetFrenchSauce = {
+sweetFrenchSauce = [
     'Sauce bechamel'
-}
+]
 
-sourFrenchSauce = {
+sourFrenchSauce = [
     'sauce tomate',
     'Allemande sauce'
-}
+]
 
-hotFrenchSauce = {
+hotFrenchSauce = [
     'creamy chili hot sauce'
-}
+]
 
-bitterFrenchSauce = {
-}
+bitterFrenchSauce = [
+]
 
-saltyFrenchSauce = {
+saltyFrenchSauce = [
     'Sauce espagnole',
     'sauce veloute',
     'sauce hollandaise',
@@ -271,10 +271,10 @@ saltyFrenchSauce = {
     'Nantua sauce',
     'Rouennaise',
     'Sauce gribiche'
-}
+]
 
 #spice
-frenchSpice = {
+frenchSpice = [
     'sugar',
     'salt',
     'mustard',
@@ -302,32 +302,32 @@ frenchSpice = {
     'almond extract',
     'onion powder',
     'sage'
-}
+]
 
-sweetFrenchSpice = {
+sweetFrenchSpice = [
     'mustard',
-    'vanilla
-}
+    'vanilla'
+]
 
-sourFrenchSpice = {
-}
+sourFrenchSpice = [
+]
 
-hotFrenchSpice = {
+hotFrenchSpice = [
     'cayenne pepper',
     'paprika'
-}
+]
 
-saltyFrenchSpice = {
+saltyFrenchSpice = [
     'garlic',
     'salt'
-}
+]
 
-bitterFrenchSpice = {
+bitterFrenchSpice = [
     'ginger'
-}
+]
 
 #oil
-frenchOil = {
+frenchOil = [
     'almond oil',
     'avocado oil',
     'butter',
@@ -340,37 +340,37 @@ frenchOil = {
     'palm oil',
     'peanut oil',
     'walnut oil'
-}
+]
 
 #liquid
-frenchLiquid = {
+frenchLiquid = [
     'chicken stock',
     'fish stock',
     'beef broth',
     'chicken broth',
     'vegetable broth'
-}
+]
 
-sweetFrenchLiquid = {
-}
+sweetFrenchLiquid = [
+]
 
-sourFrenchLiquid = {
-}
+sourFrenchLiquid = [
+]
 
-hotFrenchLiquid = {
-}
+hotFrenchLiquid = [
+]
 
-saltyFrenchLiquid = {
+saltyFrenchLiquid = [
     'fish stock',
     'chicken stock',
     'beef broth'
-}
+]
 
-bitterFrenchLiquid = {
-}
+bitterFrenchLiquid = [
+]
 
 #vegetable
-frenchVegetable = {
+frenchVegetable = [
     'artichoke',
     'asparagus',
     'eggplant',
@@ -386,9 +386,9 @@ frenchVegetable = {
     'green pepper',
     'potato',
     'tomato'
-}
+]
 
-hardFrenchVegetable = {
+hardFrenchVegetable = [
     'artichoke',
     'asparagus',
     'eggplant',
@@ -397,9 +397,9 @@ hardFrenchVegetable = {
     'green bean',
     'onion',
     'potato'
-}
+]
 
-softFrenchVegetable = {
+softFrenchVegetable = [
     'elery',
     'mushroom',
     'cauliflower',
@@ -407,11 +407,11 @@ softFrenchVegetable = {
     'red pepper',
     'green pepper',
     'tomato'
-}
+]
 
 #----------------------------------italian----------------------------
 #sauce
-italianSauce = {
+italianSauce = [
     'amatriciana sauce',
     'arrabbiata sauce',
     'bechamel sauce',
@@ -431,35 +431,35 @@ italianSauce = {
     'sugo alla puttanesca',
     'tomato sauce',
     'vodka sauce'
-}
+]
 
-sweetItalianSauce = {
+sweetItalianSauce = [
     'marinara sauce',
     'tomato sauce'
-}
+]
 
-sourItalianSauce = {
+sourItalianSauce = [
     'amatriciana sauce',
     'arrabbiata sauce',
     'bolognese sauce',
     'marinara sauce'
-}
+]
 
-hotItalianSauce = {
+hotItalianSauce = [
     'tomato sauce'
-}
+]
 
-saltyItalianSauce = {
+saltyItalianSauce = [
     'bechamel sauce',
     'bigoli in salsa',
     'sugo alla puttanesca'
-}
+]
 
-bitterItalianSauce = {
-}
+bitterItalianSauce = [
+]
 
 #spice
-italianSpice = {
+italianSpice = [
     'sugar',
     'salt',
     'garlic',
@@ -475,29 +475,29 @@ italianSpice = {
     'rosemary',
     'sage',
     'thyme'
-}
+]
 
-sweetItalianSpice = {
+sweetItalianSpice = [
     'sugar'
-}
+]
 
-sourItalianSpice = {
-}
+sourItalianSpice = [
+]
 
-hotItalianSpice = {
+hotItalianSpice = [
     'chili pepper'
-}
+]
 
-saltyItalianSpice = {
+saltyItalianSpice = [
     'salt'
-}
+]
 
-bitterItalianSpice = {
+bitterItalianSpice = [
     'basil'
-}
+]
 
 #oil
-italianOil = {
+italianOil = [
     'almond oil',
     'avocado oil',
     'butter',
@@ -510,37 +510,37 @@ italianOil = {
     'palm oil',
     'peanut oil',
     'walnut oil'
-}
+]
 
 #liquid
-italianLiquid = {
+italianLiquid = [
     'chicken stock',
     'fish stock',
     'beef broth',
     'chicken broth',
     'vegetable broth'
-}
+]
 
-sweetItalianLiquid = {
-}
+sweetItalianLiquid = [
+]
 
-sourItalianLiquid = {
-}
+sourItalianLiquid = [
+]
 
-hotItalianLiquid = {
-}
+hotItalianLiquid = [
+]
 
-saltyItalianLiquid = {
+saltyItalianLiquid = [
     'chicken stock',
     'fish stock',
     'beef broth'
-}
+]
 
-bitterItalianLiquid = {
-}
+bitterItalianLiquid = [
+]
 
 #vegetable
-italianVegetable = {
+italianVegetable = [
     'tomato',
     'garlic',
     'onion',
@@ -557,9 +557,9 @@ italianVegetable = {
     'spinach',
     'cauliflower',
     'lettuce'
-}
+]
 
-hardItalianVegetable = {
+hardItalianVegetable = [
     'garlic',
     'onion',
     'eggplant',
@@ -568,9 +568,9 @@ hardItalianVegetable = {
     'fennel',
     'celery',
     'asparagus'
-}
+]
 
-softItalianVegetable = {
+softItalianVegetable = [
     'tomato',
     'bell pepper',
     'cabbage',
@@ -579,7 +579,10 @@ softItalianVegetable = {
     'spinach',
     'cauliflower',
     'lettuce'
-}
+]
+
+
+
 
 
 
