@@ -1,4 +1,5 @@
 # -*- coding: utf8 -*-
+# -*- coding: utf8 -*-
 import nltk
 import urllib2
 import re
@@ -250,10 +251,10 @@ def toEastAsian(recipe):
 
     for ingredient in recipe.ingredients:
         print ingredient.name
-        #if ingredient.itype is 'oil':
-            #print 1
-        #else:
-            #print 0
+        if ingredient.itype is 'oil':
+            print 1
+        else:
+            print 0
 
         if ingredient.name in east_asian:
             break
@@ -262,7 +263,7 @@ def toEastAsian(recipe):
 
             if ingredient.itype is not 'meat':
                 if ingredient.itype is not 'oil':
-                    if ingredient.itype is not 'vegetable':
+                    if ingredient.itype is not 'veggie':
 
                         if ingredient.name in sweet_list:
                             if ingredient.itype is 'sauce':
@@ -318,6 +319,139 @@ def toEastAsian(recipe):
             else:
                 print"Did I get here"
                     
+def toFrench(recipe):
+
+    for ingredient in recipe.ingredients:
+        print ingredient.name
+
+        if ingredient.name in east_asian:
+            break
+
+        else:
+
+            if ingredient.itype is not 'meat':
+                if ingredient.itype is not 'oil':
+                    if ingredient.itype is not 'vegetable':
+
+                        if ingredient.name in sweet_list:
+                            if ingredient.itype is 'sauce':
+                                print 'is substituted by'+ sweetFrenchSauce[random.randrange(len(sweetFrenchSauce))]
+                            elif ingredient.itype is 'spice':
+                                print "is substituted by" +sweetFrenchSpice[random.randrange(len(sweetFrenchSpice))]
+                            else:
+                                print "is substituted by" +sweetFrenchLiquid[random.randrange(len(sweetFrenchLiquid))]
+           
+                        elif ingredient.name in sour_list:
+                            if ingredient.itype is 'sauce':
+                                print "is substituted by" +sourFrenchSauce[random.randrange(len(sourFrenchSauce))]
+                            elif ingredient.itype is 'spice':
+                                print "is substituted by"+ sourFrenchSpice[random.randrange(len(sourFrenchSpice))]
+                            else:
+                                print "is substituted by"+ sourFrenchLiquid[random.randrange(len(sourFrenchLiquid))]
+
+
+                        elif ingredient.name in hot_list:
+                            if ingredient.itype is 'sauce':
+                                print "is substituted by"+ hotFrenchSauce[random.randrange(len(hotFrenchSauce))]
+                            elif ingredient.itype is 'spice':
+                                print "is substituted by"+ hotFrenchSpice[random.randrange(len(hotFrenchSpice))]
+                            else:
+                                print "is substituted by"+ hotFrenchLiquid[random.randrange(len(hotFrenchLiquid))]
+
+
+                        elif ingredient.name in salty_list:
+                            if ingredient.itype is 'sauce':
+                                print "is substituted by" +saltyFrenchSauce[random.randrange(len(saltyFrenchSauce))]
+                            elif ingredient.itype is 'spice':
+                                print "is substituted by"+ saltyFrenchSpice[random.randrange(len(saltyFrenchSpice))]
+                            else:
+                                print"is substituted by"+ saltyFrenchLiquid[random.randrange(len(saltyFrenchLiquid))]
+
+                        else:
+                            if ingredient.itype is 'sauce':
+                                print "is substituted by" +frenchSauce[random.randrange(len(frenchSauce))]
+                            elif ingredient.itype is 'spice':
+                                print "is substituted by"+ frenchSpice[random.randrange(len(frenchSpice))]
+                            else :
+                                print"is substituted by"+ frenchLiquid[random.randrange(len(frenchLiquid))]
+
+                    else:
+                        if ingredient.name in hard_list:
+                            print "is substituted by" +hardFrenchVegetable[random.randrange(len(hardFrenchVegetable))]
+                        elif ingredient.name in soft_list:
+                            print "is substituted by" +softFrenchVegetable[random.randrange(len(softFrenchVegetable))]
+                        else:
+                            print "is substituted by" + frenchVegetable[random.randrange(len(frenchVegetable))]
+                else:
+                    print "is substituted by" + frenchOil[random.randrange(len(frenchOil))]
+
+
+def toItalian(recipe):
+
+    for ingredient in recipe.ingredients:
+        print ingredient.name
+
+        if ingredient.name in east_asian:
+            break
+
+        else:
+
+            if ingredient.itype is not 'meat':
+                if ingredient.itype is not 'oil':
+                    if ingredient.itype is not 'vegetable':
+
+                        if ingredient.name in sweet_list:
+                            if ingredient.itype is 'sauce':
+                                print 'is substituted by'+ sweetItalianSauce[random.randrange(len(sweetItalianSauce))]
+                            elif ingredient.itype is 'spice':
+                                print "is substituted by" +sweetItalianSpice[random.randrange(len(sweetItalianSpice))]
+                            else:
+                                print "is substituted by" +sweetItalianLiquid[random.randrange(len(sweetItalianLiquid))]
+           
+                        elif ingredient.name in sour_list:
+                            if ingredient.itype is 'sauce':
+                                print "is substituted by" +sourItalianSauce[random.randrange(len(sourItalianSauce))]
+                            elif ingredient.itype is 'spice':
+                                print "is substituted by"+ sourItalianSpice[random.randrange(len(sourItalianSpice))]
+                            else:
+                                print "is substituted by"+ sourItalianLiquid[random.randrange(len(sourItalianLiquid))]
+
+
+                        elif ingredient.name in hot_list:
+                            if ingredient.itype is 'sauce':
+                                print "is substituted by"+ hotItalianSauce[random.randrange(len(hotItalianSauce))]
+                            elif ingredient.itype is 'spice':
+                                print "is substituted by"+ hotItalianSpice[random.randrange(len(hotItalianSpice))]
+                            else:
+                                print "is substituted by"+ hotItalianLiquid[random.randrange(len(hotItalianLiquid))]
+
+
+                        elif ingredient.name in salty_list:
+                            if ingredient.itype is 'sauce':
+                                print "is substituted by" +saltyItalianSauce[random.randrange(len(saltyItalianSauce))]
+                            elif ingredient.itype is 'spice':
+                                print "is substituted by"+ saltyItalianSpice[random.randrange(len(saltyItalianSpice))]
+                            else:
+                                print"is substituted by"+ saltyItalianLiquid[random.randrange(len(saltyItalianLiquid))]
+
+                        else:
+                            if ingredient.itype is 'sauce':
+                                print "is substituted by" +italianSauce[random.randrange(len(italianSauce))]
+                            elif ingredient.itype is 'spice':
+                                print "is substituted by"+ italianSpice[random.randrange(len(italianSpice))]
+                            else :
+                                print"is substituted by"+ italianLiquid[random.randrange(len(italianLiquid))]
+
+                    else:
+                        if ingredient.name in hard_list:
+                            print "is substituted by" +hardItalianVegetable[random.randrange(len(hardItalianVegetable))]
+                        elif ingredient.name in soft_list:
+                            print "is substituted by" +softItalianVegetable[random.randrange(len(softItalianVegetable))]
+                        else:
+                            print "is substituted by" + italianVegetable[random.randrange(len(italianVegetable))]
+                else:
+                    print "is substituted by" + italianOil[random.randrange(len(italianOil))]
+
 
 
 def isVeg(recipe):
@@ -351,8 +485,10 @@ def main():
     #print eastasianOil[0]
     #toVeg(recipe)
     #toMeat(recipe)
-    toEastAsian(recipe)
-    print eastasianSauce[random.randrange(len(eastasianSauce))]
+    #toEastAsian(recipe)
+    #toFrench(recipe)
+    toItalian(recipe)
+    #print eastasianSauce[random.randrange(len(eastasianSauce))]
 
 main()
 
