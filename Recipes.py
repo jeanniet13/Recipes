@@ -12,10 +12,13 @@ from vegTransformation import vegrank
 
 from cuisineTransformation import *
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 from LowFatTransformation import lfingsub
 from LowFatTransformation import lfcooksub
 from LowFatTransformation import hfingsub
+=======
+>>>>>>> b9d14ab7b8123c7e94f6e76ec76fbcfb7e1e96f8
 =======
 >>>>>>> b9d14ab7b8123c7e94f6e76ec76fbcfb7e1e96f8
 
@@ -317,7 +320,11 @@ def toEastAsian(recipe):
                 else:
                     print "is substituted by" , eastasianOil[random.randrange(len(eastasianOil))]
 <<<<<<< HEAD
+<<<<<<< HEAD
             #else:                
+=======
+
+>>>>>>> b9d14ab7b8123c7e94f6e76ec76fbcfb7e1e96f8
 =======
 
 >>>>>>> b9d14ab7b8123c7e94f6e76ec76fbcfb7e1e96f8
