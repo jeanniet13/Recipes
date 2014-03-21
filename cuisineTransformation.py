@@ -145,23 +145,23 @@ eastasianLiquid = [
     'chicken stock'
 ]
 
-sweetEastasianLiquid = [
+sweetEastAsianLiquid = [
 ]
 
-sourEastasianLiquid = [
+sourEastAsianLiquid = [
     'rice vinegar',
     'vinegar'
 ]
 
-hotEastasianLiquid = [
+hotEastAsianLiquid = [
 ]
 
-saltyEastasianLiquid = [
+saltyEastAsianLiquid = [
     'cooking wine',
     'chicken stock'
 ]
 
-bitterEastasianLiquid = [
+bitterEastAsianLiquid = [
 ]
 
 #vegetable
@@ -188,7 +188,7 @@ eastasianVegetable = [
     'red pepper',
 ]
 
-hardEastasianVegetable = [
+hardEastAsianVegetable = [
     'daikon',
     'garlic',
     'thai eggplant',
@@ -200,7 +200,7 @@ hardEastasianVegetable = [
     'onion'
 ]
 
-softEastasianVegetable = [
+softEastAsianVegetable = [
     'napa cabbage',
     'chinese flowering cabbage',
     'chinese broccoli',
