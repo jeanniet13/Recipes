@@ -250,7 +250,7 @@ def toEastAsian(recipe):
     print "East Asian version"
     for ingredient in recipe.ingredients:
         print ingredient.name
-
+        
         if ingredient.name in east_asian:
             break
 
