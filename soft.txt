@@ -1,6 +1,9 @@
+Avocado
+Broccoli
 bok choy
 brussels sprout
 cabbage
+cauliflower
 celery
 chrysanthemum leaves
 eggplant
@@ -21,3 +24,13 @@ urad bean
 velvet bean
 winged bean
 yardlong bean
+green pepper
+red pepper
+straw mushroom
+chinese white cabbage
+chinese dried mushroom
+chinese broccoli
+chinese flowering cabbage
+napa cabbage
+cherry eggplant
+
