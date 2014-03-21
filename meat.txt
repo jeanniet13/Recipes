@@ -25,6 +25,7 @@ rib roast
 corned beef
 corned beef brisket
 pot roast
+steak
 veal
 bison
 buffalo
