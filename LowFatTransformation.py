@@ -31,6 +31,27 @@ lfingsub = {
     'cream cheese':'fat-free ricotta cheese',
     'white rice':'brown rice'
 }
+hfingsub={
+    'lean ground turkey':'ground beef',
+    'canadian bacon':'bacon',
+    'lean ham':'sausage',
+    'skinless chicken':'chicken',
+    'skinless turkey':'turkey',
+    'turkey sausage':'chorizo sausage',
+    'skim milk':'whole milk',
+    'evaporated skim milk':'cream',
+    'arugula':'iceberg lettuce',
+    'cooking spray':'butter',
+    'olive oil':'margarine',
+    'olive oil':'vegetable oil',
+    'fat-free margarine':'shortening',
+    'low-sodium soy sauce':'soy sauce',
+    'whole wheat pasta':'pasta',
+    'corn tortilla':'flour tortilla',
+    'whole wheat bread':'white bread',
+    'egg whites':'eggs',
+    'brown rice':'white rice'
+}
 lfcooksub = {
     'fry':'bake',
     'boil':'steam',
