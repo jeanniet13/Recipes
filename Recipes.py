@@ -316,7 +316,6 @@ def toFrench(recipe):
     print "French version"
     for ingredient in recipe.ingredients:
         print ingredient.name
-        print ingredient.itype
         if ingredient.name in french:
             break
         elif (ingredient.itype is 'spice') or (ingredient.itype is 'sauce') or (ingredient.itype is 'liquid'):
