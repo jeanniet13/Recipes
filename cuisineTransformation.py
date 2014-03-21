@@ -1,3 +1,4 @@
+# -*- coding: utf8 -*-
 #------------------------------east asian---------------------
 #sauce
 eastasianSauce = [
@@ -227,7 +228,7 @@ frenchSauce = [
     'Breton sauce',
     'Beurre noir',
     'Beurre noisette',
-    'Sauce charcutière',
+    'Sauce charcutiere',
     'Chasseur',
     'Nantua sauce',
     'Ravigote',
@@ -237,7 +238,7 @@ frenchSauce = [
     'Sauce lyonnaise',
     'Sauce poivrade',
     'Soubise sauce',
-    'Velouté sauce'
+    'Veloute sauce'
 ]
 
 sweetFrenchSauce = [
