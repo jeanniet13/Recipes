@@ -32,7 +32,7 @@ eastasianSauce = [
     'tentsuyu'
 ]
 
-sweetEastAsianSauce = [
+sweetEastasianSauce = [
     'siu haau sauce',
     'sweet bean sauce',
     'sweet and sour sauce',
@@ -43,12 +43,12 @@ sweetEastAsianSauce = [
     'nam chim'
 ]
 
-sourEastAsianSauce = [
+sourEastasianSauce = [
     'sweet and sour sauce',
     'nam chim'
 ]
 
-hotEastAsianSauce = [
+hotEastasianSauce = [
     'nam phrik',
     'ssamjang',
     'mala sauce',
@@ -59,7 +59,7 @@ hotEastAsianSauce = [
     'nam chim'
 ]
 
-saltyEastAsianSauce = [
+saltyEastasianSauce = [
     'fish sauce',
     'satay sauce',
     'tentsuyu',
@@ -74,7 +74,7 @@ saltyEastAsianSauce = [
     
 ]
 
-bitterEastAsianSauce = [
+bitterEastasianSauce = [
 ]
 
 #spice
@@ -105,22 +105,22 @@ eastasianSpice = [
     'turmeric'
 ]
 
-sweetEastAsianSpice = [
+sweetEastasianSpice = [
     'sugar'
 ]
 
-sourEastAsianSpice = [
+sourEastasianSpice = [
 ]
 
-hotEastAsianSpice = [
+hotEastasianSpice = [
     'chilli'
 ]
 
-saltyEastAsianSpice = [
+saltyEastasianSpice = [
     'salt'
 ]
 
-bitterEastAsianSpice = [
+bitterEastasianSpice = [
     'ginger'
 ]
 
@@ -145,23 +145,23 @@ eastasianLiquid = [
     'chicken stock'
 ]
 
-sweetEastAsianLiquid = [
+sweetEastasianLiquid = [
 ]
 
-sourEastAsianLiquid = [
+sourEastasianLiquid = [
     'rice vinegar',
     'vinegar'
 ]
 
-hotEastAsianLiquid = [
+hotEastasianLiquid = [
 ]
 
-saltyEastAsianLiquid = [
+saltyEastasianLiquid = [
     'cooking wine',
     'chicken stock'
 ]
 
-bitterEastAsianLiquid = [
+bitterEastasianLiquid = [
 ]
 
 #vegetable
@@ -188,7 +188,7 @@ eastasianVegetable = [
     'red pepper',
 ]
 
-hardEastAsianVegetable = [
+hardEastasianVegetable = [
     'daikon',
     'garlic',
     'thai eggplant',
@@ -200,7 +200,7 @@ hardEastAsianVegetable = [
     'onion'
 ]
 
-softEastAsianVegetable = [
+softEastasianVegetable = [
     'napa cabbage',
     'chinese flowering cabbage',
     'chinese broccoli',

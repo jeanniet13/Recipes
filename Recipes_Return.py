@@ -1,4 +1,5 @@
 # -*- coding: utf8 -*-
+## This version has no recipe transformation functionality. See Recipes.py for that.
 import urllib2
 import re
 import fractions
@@ -448,41 +449,10 @@ def printJson(recipe):
     jsonoutput["ingredients"] = ingList
     jsonoutput["cooking method"] = recipe.cooking_methods
     jsonoutput["cooking tools"] = recipe.tools
-    return json.dumps(jsonoutput, indent=2, separators=(',',': '))
+    return json.dumps(jsonoutput)
 
-def main():
-    link = raw_input("What is the URL for the recipe? ")
+def main(link):
+    #link = raw_input("What is the URL for the recipe? ")
     recipe = Recipe()
     parse(link, recipe)
-    isVeg(recipe)
-    transform = raw_input("What kind of transform would you like to do? (Enter a number) 1- Vegetarian, 2- Cuisine, 3- To/From Low-fat ")
-    if transform == '2':
-        transform2 = raw_input("What kind of cuisine would you like to do? (Enter a number) 1- East Asian, 2- French, 3- Italian ")
-        if transform2 == '1':
-            toEastasian(recipe)
-        elif transform2 == '2':
-            toFrench(recipe)
-        elif transform2 == '3':
-            toItalian(recipe)
-        else:
-            print "Invalid entry. Exiting."
-    elif transform == '1':
-        transform2 = raw_input("1- To vegetarian, 2- From vegetarian ")
-        if transform2 == '1':
-            toVeg(recipe)
-        elif transform2 == '2':
-            toMeat(recipe)
-        else:
-            print "Invalid entry. Exiting."
-    elif transform == '3':
-        transform2 = raw_input("1- To low-fat, 2- To high-fat/regular ")
-        if transform2 == '1':
-            toLowFat(recipe)
-        elif transform2 == '2':
-            toHighFat(recipe)
-    else:
-        print "Invalid entry. Exiting."
     return printJson(recipe)
-
-
-main()
