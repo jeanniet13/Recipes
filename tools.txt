@@ -244,6 +244,7 @@ Primus stove
 Ramekin
 Rice spoon
 Ricer
+rice cooker
 Roasting jack
 Roasting pan
 Roasting pan with high cover
@@ -265,7 +266,7 @@ salad spoon
 Salt and pepper shakers
 Saran (plastic)
 Saucier
-sauté pan
+saute pan
 Saucepan
 Sauteuse pan
 Scales
@@ -279,8 +280,8 @@ Shellfish scraper
 Sieve
 Silpat
 Skewer
-Skillet grill pan
-Skimmer (utensil)
+Skillet
+Skimmer
 Slotted spoon
 soup ladle
 Spatula
