@@ -245,7 +245,6 @@ def toMeat(recipe):
 
 def isVeg(recipe):
     for ingredient in recipe._ingredients:
-        print ingredient._type
         if ingredient._type != 'meat' or (ingredient._type != 'liquid' and 'veggie' not in ingredient._name):
             return False
     return True
@@ -256,7 +255,6 @@ def toEastasian(recipe):
     for ingredient in recipe._ingredients:
         if ingredient._name not in east_asian:
             if (ingredient._type is 'spice') or (ingredient._type is 'sauce') or (ingredient._type is 'liquid'):
-
                 if ingredient._name in sweet_list:
                     if ingredient._type is 'sauce':
                         print "Substitute", ingredient._name, "with", sweetEastasianSauce[random.randrange(len(sweetEastasianSauce))]
@@ -309,6 +307,8 @@ def toEastasian(recipe):
 
             elif ingredient._type is 'oil':
                     print "Substitute", ingredient._name, "with", eastasianOil[random.randrange(len(eastasianOil))]
+            else:
+                print ingredient._name
         else:
             print ingredient._name
 
@@ -371,6 +371,8 @@ def toFrench(recipe):
 
             elif ingredient._type is 'oil':
                     print "Substitute", ingredient._name, "with", frenchOil[random.randrange(len(frenchOil))]
+            else:
+                print ingredient._name
         else:
             print ingredient._name
 
@@ -433,6 +435,8 @@ def toItalian(recipe):
 
             elif ingredient._type is 'oil':
                     print "Substitute", ingredient._name, "with", italianOil[random.randrange(len(italianOil))]
+            else:
+                print ingredient._name
         else:
             print ingredient._name
 
