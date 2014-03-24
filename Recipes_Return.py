@@ -17,25 +17,25 @@ from LowFatTransformation import lfingsub
 from LowFatTransformation import lfcooksub
 from LowFatTransformation import hfingsub
 
-cmp_list = open('cookingmethods_primary.txt', 'rb').read().split('\r\n')
-cms_list = open('cookingmethods_secondary.txt', 'rb').read().split('\r\n')
-tool_list = open('tools.txt','rb').read().split('\r\n')
-veg_list = open('vegetables.txt', 'rb').read().split('\r\n')
-meat_list = open('meat.txt', 'rb').read().split('\r\n')
-oil_list = open('oil.txt', 'rb').read().split('\r\n')
-liquid_list = open('liquid.txt', 'rb').read().split('\r\n')
-spice_list = open('spices.txt', 'rb').read().split('\r\n')
-sauce_list = open('sauce.txt', 'rb').read().split('\r\n')
+cmp_list = open('cookingmethods_primary.txt', 'rb').read().split('\n')
+cms_list = open('cookingmethods_secondary.txt', 'rb').read().split('\n')
+tool_list = open('tools.txt','rb').read().split('\n')
+veg_list = open('vegetables.txt', 'rb').read().split('\n')
+meat_list = open('meat.txt', 'rb').read().split('\n')
+oil_list = open('oil.txt', 'rb').read().split('\n')
+liquid_list = open('liquid.txt', 'rb').read().split('\n')
+spice_list = open('spices.txt', 'rb').read().split('\n')
+sauce_list = open('sauce.txt', 'rb').read().split('\n')
 
-sour_list = open('sour.txt','rb').read().split('\r\n')
-hot_list = open('hot.txt', 'rb').read().split('\r\n')
-sweet_list = open('sweet.txt', 'rb').read().split('\r\n')
-salty_list = open('salty.txt','rb').read().split('\r\n')
-soft_list = open('soft.txt', 'rb').read().split('\r\n')
-hard_list = open('hard.txt','rb').read().split('\r\n')
-east_asian = open('eastasian.txt','rb').read().split('\r\n')
-italian = open('italian.txt','rb').read().split('\r\n')
-french = open('french.txt','rb').read().split('\r\n')
+sour_list = open('sour.txt','rb').read().split('\n')
+hot_list = open('hot.txt', 'rb').read().split('\n')
+sweet_list = open('sweet.txt', 'rb').read().split('\n')
+salty_list = open('salty.txt','rb').read().split('\n')
+soft_list = open('soft.txt', 'rb').read().split('\n')
+hard_list = open('hard.txt','rb').read().split('\n')
+east_asian = open('eastasian.txt','rb').read().split('\n')
+italian = open('italian.txt','rb').read().split('\n')
+french = open('french.txt','rb').read().split('\n')
 
 class Recipe:
     def __init__(self):
