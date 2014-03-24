@@ -290,20 +290,20 @@ def toEastasian(recipe):
                         print "Substitute", ingredient._name, "with", saltyEastasianLiquid[random.randrange(len(saltyEastasianLiquid))]
 
                 else:
-                        if ingredient._type is 'sauce':
-                            print "Substitute", ingredient._name, "with", eastasianSauce[random.randrange(len(eastasianSauce))]
-                        elif ingredient._type is 'spice':
-                            print "Substitute", ingredient._name, "with", eastasianSpice[random.randrange(len(eastasianSpice))]
-                        else :
-                            print "Substitute", ingredient._name, "with", eastasianLiquid[random.randrange(len(eastasianLiquid))]
+                    if ingredient._type is 'sauce':
+                        print "Substitute", ingredient._name, "with", eastasianSauce[random.randrange(len(eastasianSauce))]
+                    elif ingredient._type is 'spice':
+                        print "Substitute", ingredient._name, "with", eastasianSpice[random.randrange(len(eastasianSpice))]
+                    else :
+                        print "Substitute", ingredient._name, "with", eastasianLiquid[random.randrange(len(eastasianLiquid))]
 
             elif ingredient._type is 'veggie':
-                    if ingredient._name in hard_list:
-                        print "Substitute", ingredient._name, "with", hardEastasianVegetable[random.randrange(len(hardEastasianVegetable))]
-                    elif ingredient._name in soft_list:
-                        print "Substitute", ingredient._name, "with", softEastasianVegetable[random.randrange(len(softEastasianVegetable))]
-                    else:
-                        print "Substitute", ingredient._name, "with", eastasianVegetable[random.randrange(len(eastasianVegetable))]
+                if ingredient._name in hard_list:
+                    print "Substitute", ingredient._name, "with", hardEastasianVegetable[random.randrange(len(hardEastasianVegetable))]
+                elif ingredient._name in soft_list:
+                    print "Substitute", ingredient._name, "with", softEastasianVegetable[random.randrange(len(softEastasianVegetable))]
+                else:
+                    print "Substitute", ingredient._name, "with", eastasianVegetable[random.randrange(len(eastasianVegetable))]
 
             elif ingredient._type is 'oil':
                     print "Substitute", ingredient._name, "with", eastasianOil[random.randrange(len(eastasianOil))]
@@ -318,7 +318,6 @@ def toFrench(recipe):
     for ingredient in recipe._ingredients:
         if ingredient._name not in french:
             if (ingredient._type is 'spice') or (ingredient._type is 'sauce') or (ingredient._type is 'liquid'):
-
                 if ingredient._name in sweet_list:
                     if ingredient._type is 'sauce':
                         print "Substitute", ingredient._name, "with", sweetFrenchSauce[random.randrange(len(sweetFrenchSauce))]
@@ -354,20 +353,20 @@ def toFrench(recipe):
                         print "Substitute", ingredient._name, "with", saltyFrenchLiquid[random.randrange(len(saltyFrenchLiquid))]
 
                 else:
-                        if ingredient._type is 'sauce':
-                            print "Substitute", ingredient._name, "with", frenchSauce[random.randrange(len(frenchSauce))]
-                        elif ingredient._type is 'spice':
-                            print "Substitute", ingredient._name, "with", frenchSpice[random.randrange(len(frenchSpice))]
-                        else :
-                            print "Substitute", ingredient._name, "with", frenchLiquid[random.randrange(len(frenchLiquid))]
+                    if ingredient._type is 'sauce':
+                        print "Substitute", ingredient._name, "with", frenchSauce[random.randrange(len(frenchSauce))]
+                    elif ingredient._type is 'spice':
+                        print "Substitute", ingredient._name, "with", frenchSpice[random.randrange(len(frenchSpice))]
+                    else :
+                        print "Substitute", ingredient._name, "with", frenchLiquid[random.randrange(len(frenchLiquid))]
 
             elif ingredient._type is 'veggie':
-                    if ingredient._name in hard_list:
-                        print "Substitute", ingredient._name, "with", hardFrenchVegetable[random.randrange(len(hardFrenchVegetable))]
-                    elif ingredient._name in soft_list:
-                        print "Substitute", ingredient._name, "with", softFrenchVegetable[random.randrange(len(softFrenchVegetable))]
-                    else:
-                        print "Substitute", ingredient._name, "with", frenchVegetable[random.randrange(len(frenchVegetable))]
+                if ingredient._name in hard_list:
+                    print "Substitute", ingredient._name, "with", hardFrenchVegetable[random.randrange(len(hardFrenchVegetable))]
+                elif ingredient._name in soft_list:
+                    print "Substitute", ingredient._name, "with", softFrenchVegetable[random.randrange(len(softFrenchVegetable))]
+                else:
+                    print "Substitute", ingredient._name, "with", frenchVegetable[random.randrange(len(frenchVegetable))]
 
             elif ingredient._type is 'oil':
                     print "Substitute", ingredient._name, "with", frenchOil[random.randrange(len(frenchOil))]
@@ -418,20 +417,20 @@ def toItalian(recipe):
                         print "Substitute", ingredient._name, "with", saltyItalianLiquid[random.randrange(len(saltyItalianLiquid))]
 
                 else:
-                        if ingredient._type is 'sauce':
-                            print "Substitute", ingredient._name, "with", italianSauce[random.randrange(len(italianSauce))]
-                        elif ingredient._type is 'spice':
-                            print "Substitute", ingredient._name, "with", italianSpice[random.randrange(len(italianSpice))]
-                        else :
-                            print "Substitute", ingredient._name, "with", italianLiquid[random.randrange(len(italianLiquid))]
+                    if ingredient._type is 'sauce':
+                        print "Substitute", ingredient._name, "with", italianSauce[random.randrange(len(italianSauce))]
+                    elif ingredient._type is 'spice':
+                        print "Substitute", ingredient._name, "with", italianSpice[random.randrange(len(italianSpice))]
+                    else :
+                        print "Substitute", ingredient._name, "with", italianLiquid[random.randrange(len(italianLiquid))]
 
             elif ingredient._type is 'veggie':
-                    if ingredient._name in hard_list:
-                        print "Substitute", ingredient._name, "with", hardItalianVegetable[random.randrange(len(hardItalianVegetable))]
-                    elif ingredient._name in soft_list:
-                        print "Substitute", ingredient._name, "with", softItalianVegetable[random.randrange(len(softItalianVegetable))]
-                    else:
-                        print "Substitute", ingredient._name, "with", italianVegetable[random.randrange(len(italianVegetable))]
+                if ingredient._name in hard_list:
+                    print "Substitute", ingredient._name, "with", hardItalianVegetable[random.randrange(len(hardItalianVegetable))]
+                elif ingredient._name in soft_list:
+                    print "Substitute", ingredient._name, "with", softItalianVegetable[random.randrange(len(softItalianVegetable))]
+                else:
+                    print "Substitute", ingredient._name, "with", italianVegetable[random.randrange(len(italianVegetable))]
 
             elif ingredient._type is 'oil':
                     print "Substitute", ingredient._name, "with", italianOil[random.randrange(len(italianOil))]
